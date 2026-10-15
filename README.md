@@ -6,6 +6,7 @@ Static site for KAI. Pages are written in `src/pages/` and assembled into `publi
 
 - `src/pages/` – page sources. Shared parts are pulled in with markers: `<!--#head-common-->`, `<!--#sprite-->`, `<!--#nav <top> <sub>-->`, `<!--#footer-->`.
 - `src/partials/` – shared head tags, icon sprite, nav and footer. Edit these once and every page updates.
+- `src/data/glossary.json` – glossary terms. The build renders both the visible glossary and its DefinedTermSet JSON-LD from this file.
 - `public/` – built site (commit it). Also holds `assets/` (CSS, JS, logos), `sitemap.xml`, `robots.txt`, `llms.txt`, `_redirects`.
 
 ## Working on the site

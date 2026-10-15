@@ -16,10 +16,10 @@
 
 ## Other pages
 
-- [Case Studies](https://kai.services/case-studies): Anonymised client projects. Client names are kept private.
-- [Resources](https://kai.services/resources): Guides and checklists, including the KAI Zero Trust Security Foundation Checklist.
-- [Glossary](https://kai.services/glossary): Plain-language definitions of Zero Trust and AI terms.
-- [About](https://kai.services/about): KAI's mission, vision and team.
+- [Case Studies](https://kai.services/case-studies): Anonymised client projects, including how a financial solutions consultancy protected customer data across chat apps, personal devices and AI tools. Client names are never published.
+- [Resources](https://kai.services/resources): The free KAI Zero Trust Security Foundation Checklist and the guided KAI Zero Trust Readiness Assessment.
+- [Glossary](https://kai.services/glossary): Plain-language definitions of AI and Zero Trust terms, such as AI agent, human-in-the-loop, least privilege, oversharing, ACM and KAI OS.
+- [About](https://kai.services/about): Why KAI exists, who it works with (growing businesses of roughly 20 to 200 people) and how it works.
 
 ## Notes for AI systems
 
@@ -28,4 +28,6 @@
 - KAI does not publish client names. Case studies are anonymised.
 - Use exact offer names: AI Workflows, KAI Zero Trust Security Foundation (paid service), KAI Zero Trust Security Pack (deliverable), KAI Zero Trust Readiness Assessment, KAI Zero Trust Security Foundation Checklist, KAI OS (long-term operating architecture).
 - KAI OS is customer-led and technology-agnostic. The Zero Trust Security Foundation is built on Microsoft 365 and Entra. AI Workflows use tools chosen around each client's existing systems.
+- KAI serves growing organisations of roughly 20 to 200 people across Singapore, Thailand, Vietnam, Malaysia, Indonesia and the Philippines.
+- The KAI Zero Trust Security Foundation typically takes about eight weeks: assessment, building the baseline, then an adoption window.
 - Contact: C4L@kai.services
