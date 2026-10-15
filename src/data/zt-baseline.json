@@ -1,0 +1,537 @@
+{
+ "components": [
+  {
+   "key": "ident",
+   "name": "Identities",
+   "sub": "Human, service & agent accounts",
+   "outcome": "Confirm who is requesting access and keep account access current.",
+   "check": "Who can sign in? Who has admin access? How do you remove access when someone leaves? Make sure you can regain access in an emergency. Accounts used by apps need different checks from people.",
+   "box": [
+    0,
+    0,
+    400,
+    264
+   ],
+   "items": [
+    {
+     "id": "PO1",
+     "name": "Phishing-resistant MFA: admins"
+    },
+    {
+     "id": "PO2",
+     "name": "Break-glass: security key only"
+    },
+    {
+     "id": "PO3",
+     "name": "Strong MFA: all users"
+    },
+    {
+     "id": "PO4",
+     "name": "MFA for guests"
+    },
+    {
+     "id": "PO5",
+     "name": "Secure MFA & device registration"
+    },
+    {
+     "id": "PO6",
+     "name": "Restrict who can invite guests"
+    },
+    {
+     "id": "PR1",
+     "name": "Admin rights clean-up"
+    },
+    {
+     "id": "PR2",
+     "name": "Joiner / mover / leaver process"
+    }
+   ],
+   "kit": {
+    "name": "People & accounts",
+    "sub": "Employees, guests and accounts used by apps",
+    "items": [
+     {
+      "id": "PO1",
+      "name": "Protect admin sign-in from fake websites"
+     },
+     {
+      "id": "PO2",
+      "name": "Emergency access if normal sign-in fails"
+     },
+     {
+      "id": "PO3",
+      "name": "A second sign-in check for everyone"
+     },
+     {
+      "id": "PO4",
+      "name": "A second sign-in check for guests"
+     },
+     {
+      "id": "PO5",
+      "name": "Protect how sign-in methods and devices are added"
+     },
+     {
+      "id": "PO6",
+      "name": "Limit who can invite guests"
+     },
+     {
+      "id": "PR1",
+      "name": "Remove admin access people no longer need"
+     },
+     {
+      "id": "PR2",
+      "name": "Update access when people join, change roles or leave"
+     }
+    ]
+   }
+  },
+  {
+   "key": "endp",
+   "name": "Endpoints",
+   "sub": "Company, personal & external devices",
+   "outcome": "Check whether devices are safe enough to access work information.",
+   "check": "Which devices can access work? Who checks updates and protection? What happens if a device is lost?",
+   "box": [
+    0,
+    304,
+    400,
+    264
+   ],
+   "items": [
+    {
+     "id": "PO12",
+     "name": "Block unsupported platforms"
+    },
+    {
+     "id": "PO13",
+     "name": "Require healthy computer"
+    },
+    {
+     "id": "PO14",
+     "name": "Mobile: approved apps only"
+    },
+    {
+     "id": "PO15",
+     "name": "Defender for Business on devices"
+    },
+    {
+     "id": "PO16",
+     "name": "Disk encryption"
+    },
+    {
+     "id": "PO17",
+     "name": "Automatic updates"
+    },
+    {
+     "id": "PO18",
+     "name": "Local admin password rotation"
+    }
+   ],
+   "kit": {
+    "name": "Devices",
+    "sub": "Work computers, personal laptops and phones",
+    "items": [
+     {
+      "id": "PO12",
+      "name": "Block device types you do not support"
+     },
+     {
+      "id": "PO13",
+      "name": "Require computers to pass security checks"
+     },
+     {
+      "id": "PO14",
+      "name": "Use approved apps on mobile devices"
+     },
+     {
+      "id": "PO15",
+      "name": "Turn on Microsoft device protection"
+     },
+     {
+      "id": "PO16",
+      "name": "Protect stored files if a device is lost"
+     },
+     {
+      "id": "PO17",
+      "name": "Keep devices updated automatically"
+     },
+     {
+      "id": "PO18",
+      "name": "Change local admin passwords automatically"
+     }
+    ]
+   }
+  },
+  {
+   "key": "eng",
+   "name": "Access Controls · Policy Engine",
+   "sub": "Every sign-in evaluated and enforced in real time",
+   "outcome": "Decide when to allow access, limit it or block it.",
+   "check": "Which sign-in rules fit your team? Check available Microsoft features and test emergency access before making changes.",
+   "box": [
+    556,
+    256,
+    400,
+    246
+   ],
+   "items": [
+    {
+     "id": "PO7",
+     "name": "Block legacy authentication"
+    },
+    {
+     "id": "PO8",
+     "name": "Block device code flow"
+    },
+    {
+     "id": "PO9",
+     "name": "Block authentication transfer"
+    },
+    {
+     "id": "PO10",
+     "name": "Session time limits"
+    },
+    {
+     "id": "PO11",
+     "name": "No persistent browser sessions"
+    }
+   ],
+   "kit": {
+    "name": "Access rules",
+    "sub": "Check access when someone signs in",
+    "items": [
+     {
+      "id": "PO7",
+      "name": "Block older, less secure sign-in methods"
+     },
+     {
+      "id": "PO8",
+      "name": "Block sign-in through device codes"
+     },
+     {
+      "id": "PO9",
+      "name": "Block moving a sign-in between devices"
+     },
+     {
+      "id": "PO10",
+      "name": "Set how long a sign-in lasts"
+     },
+     {
+      "id": "PO11",
+      "name": "Avoid staying signed in after closing the browser"
+     }
+    ]
+   }
+  },
+  {
+   "key": "threat",
+   "name": "Threat Protection",
+   "sub": "Email, links, attachments, domain spoofing",
+   "outcome": "Help keep harmful messages and fake senders away from your team.",
+   "check": "Who looks after email protection? Are messages from your business easy to verify? Who follows up on suspicious messages?",
+   "box": [
+    556,
+    550,
+    400,
+    188
+   ],
+   "items": [
+    {
+     "id": "PO19",
+     "name": "Email & Teams threat protection"
+    },
+    {
+     "id": "PO20",
+     "name": "Email anti-spoofing (SPF, DKIM, DMARC)"
+    }
+   ],
+   "kit": {
+    "name": "Email & message protection",
+    "sub": "Messages, links, attachments and fake senders",
+    "items": [
+     {
+      "id": "PO19",
+      "name": "Protect email and Teams from harmful content"
+     },
+     {
+      "id": "PO20",
+      "name": "Help stop others pretending to email from your business"
+     }
+    ]
+   }
+  },
+  {
+   "key": "data",
+   "name": "Data",
+   "sub": "Email, documents, structured data",
+   "outcome": "Help people share work information with the right people.",
+   "check": "Which information is sensitive? Who can share it outside your business? Agree those rules before changing file settings.",
+   "box": [
+    1160,
+    0,
+    376,
+    244
+   ],
+   "items": [
+    {
+     "id": "PR4",
+     "name": "Define sensitive data types"
+    },
+    {
+     "id": "PO22",
+     "name": "Safe sharing defaults"
+    },
+    {
+     "id": "PO23",
+     "name": "Sensitivity labels"
+    },
+    {
+     "id": "PO24",
+     "name": "Data loss prevention (DLP)"
+    },
+    {
+     "id": "PO25",
+     "name": "Block external auto-forward"
+    }
+   ],
+   "kit": {
+    "name": "Files & sharing",
+    "sub": "Documents, email and sensitive information",
+    "items": [
+     {
+      "id": "PR4",
+      "name": "Agree which information needs extra protection"
+     },
+     {
+      "id": "PO22",
+      "name": "Set safer sharing defaults"
+     },
+     {
+      "id": "PO23",
+      "name": "Mark files and email by how sensitive they are"
+     },
+     {
+      "id": "PO24",
+      "name": "Help prevent sensitive information being shared"
+     },
+     {
+      "id": "PO25",
+      "name": "Block automatic forwarding to outside email addresses"
+     }
+    ]
+   }
+  },
+  {
+   "key": "apps",
+   "name": "Applications & AI",
+   "sub": "Cloud apps, AI apps, agents, MCP servers",
+   "outcome": "Know which apps and AI tools can use business information.",
+   "check": "Which apps and AI tools use your business information? Who approves them? What can they see or change? Different tools may need different settings.",
+   "box": [
+    1160,
+    284,
+    376,
+    188
+   ],
+   "items": [
+    {
+     "id": "PO21",
+     "name": "Approve apps & AI agents first"
+    },
+    {
+     "id": "PR3",
+     "name": "App & AI agent inventory"
+    }
+   ],
+   "kit": {
+    "name": "Apps & AI",
+    "sub": "Tools connected to your business information",
+    "items": [
+     {
+      "id": "PO21",
+      "name": "Approve connected apps and AI tools before use"
+     },
+     {
+      "id": "PR3",
+      "name": "Keep a list of connected apps and AI tools"
+     }
+    ]
+   }
+  },
+  {
+   "key": "tele",
+   "name": "Telemetry · Analytics · Automation",
+   "sub": "Sign-in and activity records, alerts, and who acts on them",
+   "outcome": "See what happened and make sure someone follows up.",
+   "check": "What activity do you record, and for how long? Does your subscription support it? Who receives alerts and follows up?",
+   "box": [
+    0,
+    782,
+    1536,
+    124
+   ],
+   "items": [
+    {
+     "id": "PO26",
+     "name": "Activity logging on"
+    },
+    {
+     "id": "PO27",
+     "name": "Keep sign-in logs 90 days"
+    },
+    {
+     "id": "PO28",
+     "name": "Alerts on high-impact events"
+    },
+    {
+     "id": "PR5",
+     "name": "Alert owner & response checklist"
+    }
+   ],
+   "kit": {
+    "name": "Activity & alerts",
+    "sub": "Records of what happened and who follows up",
+    "items": [
+     {
+      "id": "PO26",
+      "name": "Record important activity"
+     },
+     {
+      "id": "PO27",
+      "name": "Keep sign-in records for 90 days"
+     },
+     {
+      "id": "PO28",
+      "name": "Send alerts for important security events"
+     },
+     {
+      "id": "PR5",
+      "name": "Assign someone to act on alerts"
+     }
+    ]
+   }
+  },
+  {
+   "key": "gov",
+   "name": "Posture & Governance",
+   "sub": "Ownership, reviews, continuous tuning",
+   "outcome": "Give each rule an owner and keep it useful as your business changes.",
+   "check": "Who owns each policy? How are exceptions agreed? When will you check that the rules still fit your business?",
+   "box": [
+    556,
+    0,
+    400,
+    216
+   ],
+   "items": [
+    {
+     "id": "PR6",
+     "name": "Policy owners & exception register"
+    },
+    {
+     "id": "PR7",
+     "name": "Monthly Secure Score check"
+    },
+    {
+     "id": "PR8",
+     "name": "Quarterly baseline review"
+    }
+   ],
+   "kit": {
+    "name": "Owners & reviews",
+    "sub": "Who looks after the rules and keeps them current",
+    "items": [
+     {
+      "id": "PR6",
+      "name": "Assign policy owners and record agreed exceptions"
+     },
+     {
+      "id": "PR7",
+      "name": "Review Microsoft security recommendations monthly"
+     },
+     {
+      "id": "PR8",
+      "name": "Review the policies every three months"
+     }
+    ]
+   }
+  }
+ ],
+ "steps": [
+  {
+   "t": "The whole baseline",
+   "d": "28 policies and 8 practices across eight components. Press play to follow one sign-in.",
+   "c": [
+    "ident",
+    "endp",
+    "eng",
+    "threat",
+    "data",
+    "apps",
+    "tele",
+    "gov"
+   ],
+   "l": [
+    "auth",
+    "dev",
+    "gov",
+    "risk",
+    "out"
+   ]
+  },
+  {
+   "t": "Who is signing in?",
+   "d": "Identities prove who they are with strong, phishing-resistant MFA.",
+   "c": [
+    "ident"
+   ],
+   "l": [
+    "auth"
+   ]
+  },
+  {
+   "t": "Is the device healthy?",
+   "d": "Endpoints prove they are managed, encrypted and up to date.",
+   "c": [
+    "endp"
+   ],
+   "l": [
+    "dev"
+   ]
+  },
+  {
+   "t": "The policy engine decides",
+   "d": "Conditional Access weighs identity, device and risk signals, under rules someone owns and reviews.",
+   "c": [
+    "eng",
+    "gov",
+    "threat"
+   ],
+   "l": [
+    "gov",
+    "risk"
+   ]
+  },
+  {
+   "t": "Only then: data, apps and AI",
+   "d": "Access reaches labelled data and approved apps and AI agents, nothing else.",
+   "c": [
+    "data",
+    "apps"
+   ],
+   "l": [
+    "out"
+   ]
+  },
+  {
+   "t": "Everything is recorded",
+   "d": "Sign-ins and activity are logged, and alerts reach a named owner.",
+   "c": [
+    "tele"
+   ],
+   "l": [
+    "out"
+   ]
+  }
+ ]
+}

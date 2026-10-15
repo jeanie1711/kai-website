@@ -7,6 +7,8 @@ Static site for KAI. Pages are written in `src/pages/` and assembled into `publi
 - `src/pages/` – page sources. Shared parts are pulled in with markers: `<!--#head-common-->`, `<!--#sprite-->`, `<!--#nav <top> <sub>-->`, `<!--#footer-->`.
 - `src/partials/` – shared head tags, icon sprite, nav and footer. Edit these once and every page updates.
 - `src/data/glossary.json` – glossary terms. The build renders both the visible glossary and its DefinedTermSet JSON-LD from this file.
+- `src/data/workflows.json` – the AI workflow list; related-workflow cards render from it.
+- `src/data/zt-baseline.json` – the Zero Trust Baseline map: 8 components, 28 policies (PO) and 8 practices (PR), demo steps and box positions. `public/assets/zt-map.js` adds the map behaviour and the free policy kit download.
 - `public/` – built site (commit it). Also holds `assets/` (CSS, JS, logos), `sitemap.xml`, `robots.txt`, `llms.txt`, `_redirects`.
 
 ## Working on the site

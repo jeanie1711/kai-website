@@ -5,7 +5,7 @@
 ## Services
 
 - [AI Workflows](https://kai.services/ai-workflows/): KAI's main service. AI agents for everyday work, delivered in three steps (Define: choose the process, data sources and access permissions; Implement: build a pilot, test real scenarios and hand it over; Adopt: guide the team, measure results and refine). Every agent works with approved data, defined actions and human oversight.
-- [KAI Zero Trust Security Foundation](https://kai.services/zero-trust-security-foundation): Company-wide security baseline built on Microsoft 365 and Entra (Policy Design, Technical Implementation, Team Adoption). Sold on its own and recommended alongside AI Workflows.
+- [Zero Trust: KAI Zero Trust Baseline Policies and Security Foundation](https://kai.services/zero-trust-security-foundation): An interactive KAI Zero Trust Architecture map of 28 policies (PO, enforced by systems) and 8 practices (PR, carried out by people) for Microsoft 365, across Identities, Endpoints, Access Controls, Threat Protection, Data, Applications & AI, Telemetry, and Posture & Governance. Free policy kit download with no email. The paid KAI Zero Trust Security Foundation (Define, Implementation, Adopt) puts the baseline in place with the team; it is sold on its own and recommended alongside AI Workflows.
 
 ## AI workflows
 
@@ -18,7 +18,7 @@
 ## Other pages
 
 - [Case Studies](https://kai.services/case-studies): Anonymised client projects, including how a financial solutions consultancy protected customer data across chat apps, personal devices and AI tools. Client names are never published.
-- [Resources](https://kai.services/resources): The free KAI Zero Trust Security Foundation Checklist and the guided KAI Zero Trust Readiness Assessment.
+- [Resources](https://kai.services/resources): The free KAI Zero Trust Baseline Policies kit and the guided KAI Zero Trust Readiness Assessment.
 - [Glossary](https://kai.services/glossary): Plain-language definitions of AI and Zero Trust terms, such as AI agent, human-in-the-loop, least privilege, oversharing, ACM and KAI OS.
 - [About](https://kai.services/about): Why KAI exists, who it works with (growing businesses of roughly 20 to 200 people) and how it works.
 
@@ -27,8 +27,8 @@
 - AI Workflows can be bought without the Zero Trust Security Foundation. In that case KAI still checks the controls the chosen workflow needs before connecting data, but recommends the Foundation alongside it.
 - In every KAI workflow, sensitive decisions and approvals stay with named people. AI does not make payments or grant system access on its own.
 - KAI does not publish client names. Case studies are anonymised.
-- Use exact offer names: AI Workflows, KAI Zero Trust Security Foundation (paid service), KAI Zero Trust Security Pack (deliverable), KAI Zero Trust Readiness Assessment, KAI Zero Trust Security Foundation Checklist, KAI OS (long-term operating architecture).
+- Use exact offer names: AI Workflows, KAI Zero Trust Security Foundation (paid service), KAI Zero Trust Security Pack (deliverable), KAI Zero Trust Readiness Assessment, KAI Zero Trust Baseline Policies (free policy kit), KAI OS (long-term operating architecture).
 - KAI OS is customer-led and technology-agnostic. The Zero Trust Security Foundation is built on Microsoft 365 and Entra. AI Workflows use tools chosen around each client's existing systems.
 - KAI serves growing organisations of roughly 20 to 200 people across Singapore, Thailand, Vietnam, Malaysia, Indonesia and the Philippines.
-- The KAI Zero Trust Security Foundation typically takes about eight weeks: assessment, building the baseline, then an adoption window.
+- KAI does not publish pricing or fixed timelines; the work and fees are agreed with each client before starting.
 - Contact: C4L@kai.services

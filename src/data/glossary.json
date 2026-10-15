@@ -118,7 +118,7 @@
       {
         "id": "kai-zero-trust-security-foundation",
         "name": "KAI Zero Trust Security Foundation",
-        "def": "The KAI Zero Trust Security Foundation is KAI's paid security service, built on Microsoft 365 and Entra. It establishes a proportionate Zero Trust security and governance baseline for organisations adopting AI, delivered through three pillars: Policy Design, Technical Implementation and Team Adoption (ACM). It can be bought on its own and is recommended alongside KAI AI Workflows.",
+        "def": "The KAI Zero Trust Security Foundation is KAI's paid security service for Microsoft 365. KAI reviews what a business already has, defines policies that fit how it works, sets them up in Microsoft 365 and tests the changes, and helps the team understand and use the new rules through Team Adoption (ACM). It builds on the KAI Zero Trust Baseline Policies, can be bought on its own and is recommended alongside KAI AI Workflows.",
         "see": {
           "label": "See the Foundation",
           "href": "/zero-trust-security-foundation"
@@ -159,12 +159,12 @@
         }
       },
       {
-        "id": "kai-zero-trust-security-foundation-checklist",
-        "name": "KAI Zero Trust Security Foundation Checklist",
-        "def": "The KAI Zero Trust Security Foundation Checklist is a free, plain-language checklist covering the essentials of a good security baseline: who can access what, how devices are trusted and how AI tools are governed.",
+        "id": "kai-zero-trust-baseline-policies",
+        "name": "KAI Zero Trust Baseline Policies",
+        "def": "KAI Zero Trust Baseline Policies is a free policy kit for businesses of around 20 to 200 people using Microsoft 365. It brings together 28 policies enforced by systems and 8 practices carried out by people, mapped across the components of the Zero Trust architecture, with questions to check before making changes.",
         "see": {
-          "label": "Get the checklist",
-          "href": "/resources"
+          "label": "Explore the map and get the kit",
+          "href": "/zero-trust-security-foundation"
         }
       }
     ]
