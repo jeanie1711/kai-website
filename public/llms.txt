@@ -1,18 +1,19 @@
 # KAI
 
-> KAI (kai.services) helps small and medium-sized businesses across Southeast Asia put AI agents and automation to work in everyday operations, on a Zero Trust security foundation. KAI offers two services that can be bought separately and are recommended together: AI Workflows and the KAI Zero Trust Security Foundation.
+> KAI (kai.services) brings AI agents into everyday work for small and medium-sized businesses across Southeast Asia, with Zero Trust security: approved data, defined actions and human oversight. Tagline: Inspired. Trusted. Empowered.
 
 ## Services
 
-- [AI Workflows](https://kai.services/ai-workflows/): AI agents and automation for repetitive operations, delivered in three steps (Define, Implement, Adopt) with approved data access, least-privilege permissions, human approval points and a measured pilot.
-- [KAI Zero Trust Security Foundation](https://kai.services/zero-trust-security-foundation): The security baseline behind safer AI, built on Microsoft 365 and Entra, delivered through Policy Design, Technical Implementation and Team Adoption.
+- [AI Workflows](https://kai.services/ai-workflows/): KAI's main service. AI agents for everyday work, delivered in three steps (Define: choose the process, data sources and access permissions; Implement: build a pilot, test real scenarios and hand it over; Adopt: guide the team, measure results and refine). Every agent works with approved data, defined actions and human oversight.
+- [KAI Zero Trust Security Foundation](https://kai.services/zero-trust-security-foundation): Company-wide security baseline built on Microsoft 365 and Entra (Policy Design, Technical Implementation, Team Adoption). Sold on its own and recommended alongside AI Workflows.
 
 ## AI workflows
 
-- [Knowledge Assistant](https://kai.services/ai-workflows/knowledge-assistant): Answers employees' questions from approved SOPs and policies, with a source link, following each employee's existing access.
-- [Operations Follow-up](https://kai.services/ai-workflows/operations-follow-up): Turns meeting notes and requests into tasks with an owner, a due date and reminders; a person confirms anything unclear.
-- [Employee Onboarding](https://kai.services/ai-workflows/employee-onboarding): Role-specific first-week checklist, guides and setup tasks; account access goes through existing approvals.
-- [Document Processing](https://kai.services/ai-workflows/document-processing): Reads routine documents such as invoices, extracts fields and routes them to a named approver; nothing is paid automatically.
+- [Sales Outreach](https://kai.services/ai-workflows/sales-outreach): KAI's flagship workflow. AI agents verify and qualify leads and suggest tailored outreach; a person approves content and recipients before automation sends, logs replies and updates the CRM. Measures: qualified leads, positive replies, meetings booked, time per lead.
+- [Lead Nurturing](https://kai.services/ai-workflows/lead-nurturing): AI drafts content for an audience segment, a person reviews it, automation sends and tracks engagement, keeping in touch with leads who are not ready to buy.
+- [Knowledge Assistant](https://kai.services/ai-workflows/knowledge-assistant): Answers questions from approved policies, SOPs and sales materials, with sources, following each employee's existing access.
+- [Employee Onboarding](https://kai.services/ai-workflows/employee-onboarding): From role and start date to checklist, assigned tasks and reminders; account access goes through existing approvals.
+- [Documents & Follow-ups](https://kai.services/ai-workflows/documents-and-follow-ups): AI extracts details from emails or documents such as invoices and meeting notes, a person reviews them, then the task is routed to the right owner. Nothing is paid or committed automatically.
 
 ## Other pages
 

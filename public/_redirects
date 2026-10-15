@@ -1,3 +1,6 @@
 # Cloudflare Pages serves clean URLs automatically (/about -> about.html),
-# so the Netlify-style 200 rewrites are not needed here and can cause
-# redirect loops. Add real 301 redirects below if any URL changes.
+# so no rewrites are needed. Real 301 redirects for moved pages go below.
+
+# Workflows merged into Documents & Follow-ups (2026-10-15)
+/ai-workflows/operations-follow-up   /ai-workflows/documents-and-follow-ups   301
+/ai-workflows/document-processing    /ai-workflows/documents-and-follow-ups   301

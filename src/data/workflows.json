@@ -1,0 +1,7 @@
+[
+  {"id": "sales-outreach", "name": "Sales Outreach", "path": "/ai-workflows/sales-outreach", "icon": "i-send", "blurb": "AI researches leads and drafts outreach. Your team approves and focuses on conversations."},
+  {"id": "lead-nurturing", "name": "Lead Nurturing", "path": "/ai-workflows/lead-nurturing", "icon": "i-megaphone", "blurb": "Keep in touch with leads who are not ready to buy."},
+  {"id": "knowledge-assistant", "name": "Knowledge Assistant", "path": "/ai-workflows/knowledge-assistant", "icon": "i-book", "blurb": "Find policies, SOPs and sales materials faster, with a link to the source."},
+  {"id": "employee-onboarding", "name": "Employee Onboarding", "path": "/ai-workflows/employee-onboarding", "icon": "i-user-plus", "blurb": "Help new starters and colleagues know what to do."},
+  {"id": "documents-and-follow-ups", "name": "Documents & Follow-ups", "path": "/ai-workflows/documents-and-follow-ups", "icon": "i-check-doc", "blurb": "Reduce manual entry, handoffs and repeat questions."}
+]
