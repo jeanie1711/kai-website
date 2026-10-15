@@ -17,7 +17,7 @@
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var STORE = 'kai-baseline-review-v1';
   var idleTitle = stepTitle.textContent, idleDesc = stepDesc.textContent;
-  var selected = 'eng', step = 0, timer = null, autoplayed = false, review = {};
+  var selected = 'eng', step = 0, timer = null, review = {};
   try { review = JSON.parse(localStorage.getItem(STORE) || '{}') || {}; } catch (e) { review = {}; }
 
   var esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
@@ -96,19 +96,6 @@
     });
   });
   document.addEventListener('visibilitychange', function () { if (document.hidden) stop(); });
-
-  // Autoplay once when the map first comes into view (never for reduced-motion users).
-  if (!reduce) {
-    var check = function () {
-      var r = map.getBoundingClientRect();
-      if (r.top < window.innerHeight * 0.6 && r.bottom > 0) {
-        window.removeEventListener('scroll', check);
-        if (!autoplayed && !timer) { autoplayed = true; play(); }
-      }
-    };
-    window.addEventListener('scroll', check, { passive: true });
-    check();
-  }
 
   // Free policy kit: generated in the browser, no form and no email.
   var labels = { check: 'Needs checking', progress: 'In progress', reviewed: 'Checked with our IT team' };
