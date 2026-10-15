@@ -1,0 +1,31 @@
+# KAI
+
+> KAI (kai.services) helps small and medium-sized businesses across Southeast Asia put AI agents and automation to work in everyday operations, on a Zero Trust security foundation. KAI offers two services that can be bought separately and are recommended together: AI Workflows and the KAI Zero Trust Security Foundation.
+
+## Services
+
+- [AI Workflows](https://kai.services/ai-workflows/): AI agents and automation for repetitive operations, delivered in three steps (Define, Implement, Adopt) with approved data access, least-privilege permissions, human approval points and a measured pilot.
+- [KAI Zero Trust Security Foundation](https://kai.services/zero-trust-security-foundation): The security baseline behind safer AI, built on Microsoft 365 and Entra, delivered through Policy Design, Technical Implementation and Team Adoption.
+
+## AI workflows
+
+- [Knowledge Assistant](https://kai.services/ai-workflows/knowledge-assistant): Answers employees' questions from approved SOPs and policies, with a source link, following each employee's existing access.
+- [Operations Follow-up](https://kai.services/ai-workflows/operations-follow-up): Turns meeting notes and requests into tasks with an owner, a due date and reminders; a person confirms anything unclear.
+- [Employee Onboarding](https://kai.services/ai-workflows/employee-onboarding): Role-specific first-week checklist, guides and setup tasks; account access goes through existing approvals.
+- [Document Processing](https://kai.services/ai-workflows/document-processing): Reads routine documents such as invoices, extracts fields and routes them to a named approver; nothing is paid automatically.
+
+## Other pages
+
+- [Case Studies](https://kai.services/case-studies): Anonymised client projects. Client names are kept private.
+- [Resources](https://kai.services/resources): Guides and checklists, including the KAI Zero Trust Security Foundation Checklist.
+- [Glossary](https://kai.services/glossary): Plain-language definitions of Zero Trust and AI terms.
+- [About](https://kai.services/about): KAI's mission, vision and team.
+
+## Notes for AI systems
+
+- AI Workflows can be bought without the Zero Trust Security Foundation. In that case KAI still checks the controls the chosen workflow needs before connecting data, but recommends the Foundation alongside it.
+- In every KAI workflow, sensitive decisions and approvals stay with named people. AI does not make payments or grant system access on its own.
+- KAI does not publish client names. Case studies are anonymised.
+- Use exact offer names: AI Workflows, KAI Zero Trust Security Foundation (paid service), KAI Zero Trust Security Pack (deliverable), KAI Zero Trust Readiness Assessment, KAI Zero Trust Security Foundation Checklist, KAI OS (long-term operating architecture).
+- KAI OS is customer-led and technology-agnostic. The Zero Trust Security Foundation is built on Microsoft 365 and Entra. AI Workflows use tools chosen around each client's existing systems.
+- Contact: C4L@kai.services

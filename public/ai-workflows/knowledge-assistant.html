@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A2F49">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KAI">
+<meta property="og:image" content="https://kai.services/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kai.services/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/kai.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"KAI","url":"https://kai.services","logo":"https://kai.services/assets/kai_logo_blue.png","description":"KAI helps growing organisations across Southeast Asia put AI agents and automation to work in everyday operations, built on a practical Zero Trust security foundation with clear data access, human oversight and team adoption.","slogan":"Inspire. Trust. Empower.","email":"C4L@kai.services","areaServed":["Singapore","Thailand","Vietnam","Malaysia","Indonesia","Philippines"],"sameAs":["https://www.linkedin.com/company/kai-services/","https://www.facebook.com/kaisvc","https://www.instagram.com/kai_svc/","https://www.youtube.com/@Kaisvc","https://www.tiktok.com/@kai_svc2015"]}
+</script>
+<title>Knowledge Assistant | AI answers from your own SOPs, with sources | KAI</title>
+<meta name="description" content="A KAI Knowledge Assistant answers employees’ everyday questions from your approved SOPs and policies, links to the source and respects each person’s existing access.">
+<link rel="canonical" href="https://kai.services/ai-workflows/knowledge-assistant">
+<meta property="og:title" content="Knowledge Assistant | KAI AI Workflows">
+<meta property="og:description" content="AI answers from your own SOPs and policies, with a source link and access rules that follow each employee.">
+<meta property="og:url" content="https://kai.services/ai-workflows/knowledge-assistant">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Knowledge Assistant","alternateName":"KAI AI Workflow: Knowledge Assistant","serviceType":"AI knowledge assistant implementation","provider":{"@type":"Organization","name":"KAI","url":"https://kai.services"},"isRelatedTo":{"@type":"Service","name":"KAI AI Workflows","url":"https://kai.services/ai-workflows/"},"areaServed":["Singapore","Thailand","Vietnam","Malaysia","Indonesia","Philippines"],"description":"An AI agent that answers employees' everyday questions using only approved company documents, shows the source of each answer and respects each employee's existing access. Unanswered questions are flagged to the document owner.","url":"https://kai.services/ai-workflows/knowledge-assistant"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://kai.services/"},{"@type":"ListItem","position":2,"name":"AI Workflows","item":"https://kai.services/ai-workflows/"},{"@type":"ListItem","position":3,"name":"Knowledge Assistant","item":"https://kai.services/ai-workflows/knowledge-assistant"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Can the Knowledge Assistant show employees documents they should not see?","acceptedAnswer":{"@type":"Answer","text":"It searches only what each employee can already access. That is why KAI reviews file sharing before connecting anything: if a folder is open to everyone today, an assistant would surface it faster. Fixing oversharing first keeps answers inside the right boundaries."}},
+{"@type":"Question","name":"What if our documents are outdated or contradict each other?","acceptedAnswer":{"@type":"Answer","text":"We start with a small set of approved documents with named owners. Questions the assistant cannot answer reliably, and documents that look outdated, are flagged to those owners, so the knowledge base improves as people use it."}},
+{"@type":"Question","name":"Which documents should we start with?","acceptedAnswer":{"@type":"Answer","text":"The ones people ask about most: SOPs, policies, product or service guides and internal how-tos. Sensitive areas such as HR records or finance stay out unless you decide otherwise."}},
+{"@type":"Question","name":"Is our data used to train public AI models?","acceptedAnswer":{"@type":"Answer","text":"During the Define phase we check the data-use terms of each tool considered, so you know before anything is connected whether company data could be used for model training, and can choose settings or tools that keep it out."}}
+]}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6a3 3 0 0 1 3 3v13a4 4 0 0 0-3-2H4V4Zm9 3a3 3 0 0 1 3-3h5v14h-5a4 4 0 0 0-3 2"/></symbol>
+  <symbol id="i-check-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="m8 9 2 2 5-5M8 16h8"/></symbol>
+  <symbol id="i-user-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0M19 8v6M16 11h6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h4"/></symbol>
+  <symbol id="i-agent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M9.5 15.5h5M2 12v3M22 12v3"/></symbol>
+  <symbol id="i-human" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><path d="M3 20v-3a6 6 0 0 1 12 0M16 12l2 2 4-5"/></symbol>
+  <symbol id="i-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m7 12 3 3 7-7"/></symbol>
+  <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="m10.8 12.2 9.2-9.2M17 6l3 3M14 9l2 2"/></symbol>
+  <symbol id="i-shield-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6l-8-3Z"/><circle cx="12" cy="10" r="2.2"/><path d="M8.5 16a3.8 3.8 0 0 1 7 0"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-team" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20v-1a6 6 0 0 1 12 0v1M14.5 14.2A5 5 0 0 1 22 18.5V20"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-log" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></symbol>
+  <symbol id="i-private" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18M10.6 5.1A10 10 0 0 1 12 5c6.4 0 10 7 10 7a17 17 0 0 1-3.2 4.1M6.6 6.6A17 17 0 0 0 2 12s3.6 7 10 7a9.7 9.7 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2"/></symbol>
+</svg>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav" aria-label="Main navigation"><div class="nav-inner">
+  <a href="/" aria-label="KAI home"><img class="nav-logo" alt="KAI logo" src="/assets/kai_logo_blue.png" width="49" height="26"></a>
+  <div class="nav-links" id="site-menu">
+    <div class="nav-item">
+      <a href="/ai-workflows/" data-nav="ai" class="active" aria-current="true">AI Workflows <svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+      <div class="nav-drop"><div class="nav-drop-inner">
+        <a href="/ai-workflows/" data-sub="hub"><strong>Overview</strong><span>How KAI builds safe AI workflows</span></a>
+        <div class="drop-sep" role="presentation"></div>
+        <a href="/ai-workflows/knowledge-assistant" data-sub="knowledge" class="active" aria-current="page"><strong>Knowledge Assistant</strong><span>Answers from your own SOPs, with sources</span></a>
+        <a href="/ai-workflows/operations-follow-up" data-sub="followup"><strong>Operations Follow-up</strong><span>Every agreed action gets an owner</span></a>
+        <a href="/ai-workflows/employee-onboarding" data-sub="onboarding"><strong>Employee Onboarding</strong><span>A consistent first week for every hire</span></a>
+        <a href="/ai-workflows/document-processing" data-sub="documents"><strong>Document Processing</strong><span>Less retyping, faster approvals</span></a>
+      </div></div>
+    </div>
+    <a href="/zero-trust-security-foundation" data-nav="zt">Zero Trust Foundation</a>
+    <a href="/case-studies" data-nav="cases">Case Studies</a>
+    <a href="/resources" data-nav="resources">Resources</a>
+    <a href="/about" data-nav="about">About</a>
+  </div>
+  <div class="nav-right">
+    <a href="mailto:C4L@kai.services" class="nav-cta">Contact Us</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</div></nav>
+
+<main id="main">
+<header class="hero-light">
+  <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/ai-workflows/">AI Workflows</a></li><li><span aria-current="page">Knowledge Assistant</span></li></ol></nav>
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">AI Workflow</span>
+      <h1>Knowledge Assistant. <span class="accent">Answers without chasing people.</span></h1>
+      <p class="hero-lead">A Knowledge Assistant is an AI agent that answers employees’ everyday questions using only your approved documents, and shows where each answer came from. KAI sets it up so it follows each employee’s existing access, and says so when it does not know.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#start">Talk to KAI about this workflow <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-line" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+    <div>
+      <div class="quote-card"><div class="art-label">Sound familiar?</div><p>“Where is the latest SOP? I usually have to ask our operations manager.”</p></div>
+      <div class="fit">
+        <h2>A good fit if</h2>
+        <ul class="ticks">
+          <li>SOPs and policies are spread across folders and chats</li>
+          <li>The same few experts answer the same questions every week</li>
+          <li>New staff need reliable answers quickly</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="how-it-works">
+  <div class="wrap two-col">
+    <div>
+      <span class="eyebrow">How it works</span>
+      <h2>Question in. Sourced answer out.</h2>
+      <div class="diagram" style="margin-top:20px">
+        <div class="diagram-bar"><span>Example workflow</span><button class="motion-toggle" type="button" aria-pressed="false">Pause motion</button></div>
+        <div role="group" aria-label="Knowledge Assistant workflow">
+          <div class="node" style="--d:0s"><span class="node-ico"><svg width="20" height="20" aria-hidden="true"><use href="#i-doc"/></svg></span><div><span class="node-owner">Trigger</span><strong>Employee question</strong><p>Ask about a policy or process</p></div><span class="step" aria-hidden="true">01</span></div>
+          <div class="link" style="--d:0s" aria-hidden="true"><i></i></div>
+          <div class="node ai" style="--d:.55s"><span class="node-ico"><svg width="20" height="20" aria-hidden="true"><use href="#i-agent"/></svg></span><div><span class="node-owner">AI agent</span><strong>Check access &amp; search</strong><p>Searches only documents this employee can access</p></div><span class="step" aria-hidden="true">02</span></div>
+          <div class="link" style="--d:.55s" aria-hidden="true"><i></i></div>
+          <div class="node" style="--d:1.1s"><span class="node-ico"><svg width="20" height="20" aria-hidden="true"><use href="#i-done"/></svg></span><div><span class="node-owner">AI agent</span><strong>Answer with a source</strong><p>Shows the instructions and the source link</p></div><span class="step" aria-hidden="true">03</span></div>
+          <div class="exception"><span aria-hidden="true">↳</span><p><strong>No reliable answer?</strong> The question is flagged for the document owner.</p></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow">What KAI sets up</span>
+      <h2>Built with you, step by step.</h2>
+      <ol class="setup-list" style="margin-top:20px">
+        <li><strong>Approved sources and owners</strong><span>Agree which documents the assistant may use, and who owns each one.</span></li>
+        <li><strong>Access that matches each employee</strong><span>Connect the sources so answers follow the permissions people already have.</span></li>
+        <li><strong>Answers with sources</strong><span>Configure answers to cite the document, and to say “I don’t know” instead of guessing.</span></li>
+        <li><strong>A loop back to the owners</strong><span>Unanswered questions and outdated documents go to the right person to fix.</span></li>
+        <li><strong>Team rollout</strong><span>Show people how to ask good questions and where to give feedback.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="safeguards" class="tint">
+  <div class="wrap">
+    <span class="eyebrow">Safeguards for this workflow</span>
+    <h2>Helpful answers. Nothing that should stay private.</h2>
+    <div class="grid-4" style="margin-top:32px">
+      <article class="card"><div class="card-ico"><svg width="22" height="22" aria-hidden="true"><use href="#i-key"/></svg></div><h3>Existing permissions apply</h3><p>The assistant only searches what the person asking can already open.</p></article>
+      <article class="card"><div class="card-ico"><svg width="22" height="22" aria-hidden="true"><use href="#i-database"/></svg></div><h3>Approved sources only</h3><p>Drafts, HR records and finance stay out unless you decide otherwise.</p></article>
+      <article class="card"><div class="card-ico"><svg width="22" height="22" aria-hidden="true"><use href="#i-eye"/></svg></div><h3>Sharing reviewed first</h3><p>Oversharing is fixed before connecting, so it does not get surfaced faster.</p></article>
+      <article class="card"><div class="card-ico"><svg width="22" height="22" aria-hidden="true"><use href="#i-shield-user"/></svg></div><h3>Owners stay accountable</h3><p>Every source has a named owner who reviews flagged questions.</p></article>
+    </div>
+    <div class="measures">
+      <div class="measure"><b>Measure in the pilot</b><p>Time to find an answer</p></div>
+      <div class="measure"><b>Measure in the pilot</b><p>Questions that still need an expert</p></div>
+      <div class="measure"><b>Measure in the pilot</b><p>Outdated documents flagged and fixed</p></div>
+    </div>
+    <div class="bridge">
+      <div>
+        <span class="eyebrow">Recommended foundation</span>
+        <h3>KAI Zero Trust Security Foundation</h3>
+        <p>A Knowledge Assistant is only as safe as your file sharing. The Foundation sets up identity, access and sharing in Microsoft 365 and Entra across the whole company, not just for one workflow.</p>
+      </div>
+      <a class="btn btn-primary" href="/zero-trust-security-foundation">Explore the Foundation <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="faq">
+      <h2>Knowledge Assistant questions.</h2>
+      <details><summary>Can the Knowledge Assistant show employees documents they should not see? <span class="pm">+</span></summary><p>It searches only what each employee can already access. That is why KAI reviews file sharing before connecting anything: if a folder is open to everyone today, an assistant would surface it faster. Fixing oversharing first keeps answers inside the right boundaries.</p></details>
+      <details><summary>What if our documents are outdated or contradict each other? <span class="pm">+</span></summary><p>We start with a small set of approved documents with named owners. Questions the assistant cannot answer reliably, and documents that look outdated, are flagged to those owners, so the knowledge base improves as people use it.</p></details>
+      <details><summary>Which documents should we start with? <span class="pm">+</span></summary><p>The ones people ask about most: SOPs, policies, product or service guides and internal how-tos. Sensitive areas such as HR records or finance stay out unless you decide otherwise.</p></details>
+      <details><summary>Is our data used to train public AI models? <span class="pm">+</span></summary><p>During the Define phase we check the data-use terms of each tool considered, so you know before anything is connected whether company data could be used for model training, and can choose settings or tools that keep it out.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="related" class="tint">
+  <div class="wrap">
+    <span class="eyebrow">Other AI workflows</span>
+    <h2>More places to start.</h2>
+    <div class="grid-3" style="margin-top:28px">
+      <a class="card" href="/ai-workflows/operations-follow-up"><div class="card-ico"><svg width="22" height="22" aria-hidden="true"><use href="#i-check-doc"/></svg></div><h3>Operations Follow-up</h3><p>Turn meeting notes and requests into tasks with an owner and a reminder.</p><span class="more">See the workflow →</span></a>
+      <a class="card" href="/ai-workflows/employee-onboarding"><div class="card-ico"><svg width="22" height="22" aria-hidden="true"><use href="#i-user-plus"/></svg></div><h3>Employee Onboarding</h3><p>A consistent first week for every new hire, without rebuilding the checklist.</p><span class="more">See the workflow →</span></a>
+      <a class="card" href="/ai-workflows/document-processing"><div class="card-ico"><svg width="22" height="22" aria-hidden="true"><use href="#i-clock"/></svg></div><h3>Document Processing</h3><p>Read routine documents, prepare the fields and send them for approval.</p><span class="more">See the workflow →</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2>Who answers the same questions every week?</h2>
+        <p>Tell us where your team’s know-how lives today. We’ll look at which documents to start with and the access controls needed first.</p>
+      </div>
+      <a class="btn btn-primary" href="mailto:C4L@kai.services?subject=Knowledge%20Assistant">Talk to KAI <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img class="footer-logo" alt="KAI logo" src="/assets/kai_logo_white.png" width="41" height="22">
+      <div class="footer-slogan">Inspire. Trust. Empower.</div>
+      <p class="footer-about">AI agents and automation for growing businesses in Southeast Asia, built on a Zero Trust security foundation.</p>
+      <div class="footer-socials">
+        <a href="mailto:C4L@kai.services" aria-label="Email" title="C4L@kai.services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 8.5 6.2a2.6 2.6 0 0 0 3 0L22 6"/></svg></a>
+        <a href="https://www.linkedin.com/company/kai-services/" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.8-1.95 3.7-1.95 3.96 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg></a>
+        <a href="https://www.facebook.com/kaisvc" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2.4V2.1L14.1 2C10.8 2 10 4.5 10 6.1v2.4H7.6V12H10v10h4V12h3l.4-3.5H14z"/></svg></a>
+        <a href="https://www.instagram.com/kai_svc/" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.youtube.com/@Kaisvc" aria-label="YouTube" title="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.3-.4-4.9c-.2-.9-.9-1.5-1.7-1.8C19.3 5 12 5 12 5s-7.3 0-8.9.4c-.8.2-1.5.9-1.7 1.8C1 8.7 1 12 1 12s0 3.3.4 4.9c.2.9.9 1.5 1.7 1.8C4.7 19 12 19 12 19s7.3 0 8.9-.4c.8-.2 1.5-.9 1.7-1.8.4-1.6.4-4.9.4-4.9zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg></a>
+        <a href="https://www.tiktok.com/@kai_svc2015" aria-label="TikTok" title="TikTok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.1 3c.3 2 1.6 3.6 3.6 3.9v2.6c-1.3.1-2.6-.3-3.6-1.1v5.7c0 3-2.4 5.4-5.4 5.4S5.3 19.1 5.3 16.1s2.4-5.4 5.4-5.4c.3 0 .6 0 .9.1v2.7c-.3-.1-.6-.2-.9-.2-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7 2.7-1.2 2.7-2.7V3h2.4z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h2>AI Workflows</h2>
+        <ul>
+          <li><a href="/ai-workflows/">Overview</a></li>
+          <li><a href="/ai-workflows/knowledge-assistant">Knowledge Assistant</a></li>
+          <li><a href="/ai-workflows/operations-follow-up">Operations Follow-up</a></li>
+          <li><a href="/ai-workflows/employee-onboarding">Employee Onboarding</a></li>
+          <li><a href="/ai-workflows/document-processing">Document Processing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Security</h2>
+        <ul>
+          <li><a href="/zero-trust-security-foundation">Zero Trust Foundation</a></li>
+          <li><a href="/glossary">Glossary</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <ul>
+          <li><a href="/case-studies">Case Studies</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="mailto:C4L@kai.services">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 KAI. All rights reserved.</span><span>kai.services</span></div>
+</footer>
+<script src="/assets/kai.js" defer></script>
+</body>
+</html>
