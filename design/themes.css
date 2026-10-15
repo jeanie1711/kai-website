@@ -1,0 +1,70 @@
+/* Live site uses E2 (Navy & Cyan + Amber), now the default in public/assets/kai.css. The previous
+   navy/blue/plum theme was: ink #0A2F49/#071f33, accent #6E1338/#4A0D26, glow #C94770/#E0A0B8,
+   cta #EAE0C4/#FFFCF3, Poppins. */
+/* Theme candidates for the KAI site. Each block only sets the primitives defined at the top of
+   public/assets/kai.css; every tint, border and dark-surface text colour is derived from them.
+   To adopt one: copy its values into :root in kai.css (and its fonts into head-common.html). */
+
+/* E. Navy & Cyan: current navy/blue base, the cyan glow, icy buttons and type of C, no purple.
+   Three accent choices replace plum (accent = small labels on light backgrounds, footer line). */
+:root[data-theme^="navycyan"]{
+  --ink:#0A2F49;--ink-deep:#061A2B;
+  --brand:#0770A7;--brand-2:#1E87BB;
+  --glow:#22D3EE;--accent-light:#A5F3FC;
+  --cta:#A5F3FC;--cta-hi:#ECFEFF;
+  --paper:#ffffff;--muted:#5A6878;
+  --font-body:Inter,system-ui,sans-serif;--font-head:"Space Grotesk",system-ui,sans-serif;
+}
+/* E1. Teal accent: one calm blue-cyan family, the most cohesive. */
+:root[data-theme="navycyan-teal"]{--accent:#0E7490;--accent-deep:#155E75}
+/* E2. Amber accent: a warm counterpoint to the cool blues; ties back to KAI's gold. */
+:root[data-theme="navycyan-amber"]{--accent:#B45309;--accent-deep:#92400E}
+/* E3. Coral accent: warmer and more energetic, still reads as friendly rather than alarming. */
+:root[data-theme="navycyan-coral"]{--accent:#C2452D;--accent-deep:#9A3412}
+
+/* A. Midnight & Emerald: "safe to go". Security reads as green-light, growth and calm. */
+:root[data-theme="emerald"]{
+  --ink:#0B1F2A;--ink-deep:#06131B;
+  --brand:#0B7A5E;--brand-2:#14A37F;
+  --accent:#0E5A4C;--accent-deep:#093D34;
+  --glow:#34D399;--accent-light:#A7F3D0;
+  --cta:#CFF5E4;--cta-hi:#F2FDF8;
+  --paper:#ffffff;--muted:#5B6B70;
+  --font-body:"Plus Jakarta Sans",system-ui,sans-serif;--font-head:"Plus Jakarta Sans",system-ui,sans-serif;
+}
+
+/* B. Graphite & Gold: premium advisory. Warm, confident, consultancy rather than tech vendor. */
+:root[data-theme="graphite"]{
+  --ink:#1B1B1F;--ink-deep:#0E0E11;
+  --brand:#8A5A12;--brand-2:#C98A1C;
+  --accent:#5E3B0C;--accent-deep:#3E2707;
+  --glow:#E7A93B;--accent-light:#F3D28A;
+  --cta:#F2C14E;--cta-hi:#FFE9AE;
+  --paper:#FFFDF8;--muted:#6B6458;
+  --logo:var(--ink);
+  --font-body:Inter,system-ui,sans-serif;--font-head:Fraunces,Georgia,serif;
+}
+
+/* C. Indigo & Cyan: AI-forward. Feels like modern software, signals "we know AI". */
+:root[data-theme="indigo"]{
+  --ink:#151338;--ink-deep:#0A0920;
+  --brand:#4338CA;--brand-2:#6366F1;
+  --accent:#6D28D9;--accent-deep:#4C1D95;
+  --glow:#22D3EE;--accent-light:#A5F3FC;
+  --cta:#A5F3FC;--cta-hi:#ECFEFF;
+  --paper:#ffffff;--muted:#5D6078;
+  --font-body:Inter,system-ui,sans-serif;--font-head:"Space Grotesk",system-ui,sans-serif;
+}
+
+/* D. Forest & Terracotta: human and grounded. Calm green with a warm Southeast Asian accent. */
+:root[data-theme="forest"]{
+  --ink:#16302A;--ink-deep:#0C1F1A;
+  --brand:#2E6B57;--brand-2:#4A8F76;
+  --accent:#A8461F;--accent-deep:#7A3015;
+  --glow:#E07A4F;--accent-light:#F4BFA3;
+  --cta:#E9DCC3;--cta-hi:#FBF6EC;
+  --paper:#FFFCF6;--muted:#62675F;
+  --font-body:"DM Sans",system-ui,sans-serif;--font-head:"DM Serif Display",Georgia,serif;
+}
+:root[data-theme="forest"] h1,:root[data-theme="forest"] h2{font-weight:400;letter-spacing:-.01em}
+:root[data-theme="graphite"] h1,:root[data-theme="graphite"] h2{font-weight:600;letter-spacing:-.02em}

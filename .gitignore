@@ -3,3 +3,4 @@ Thumbs.db
 .vercel/
 .wrangler/
 node_modules/
+public/theme-preview.html
