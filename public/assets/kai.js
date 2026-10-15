@@ -51,4 +51,37 @@
   }
   toggles.forEach(function (b) { b.addEventListener('click', function () { paused = !paused; sync(); }); });
   sync();
+
+  // Scroll reveal: cards fade up as they enter the viewport, staggered within each row.
+  // Elements already on screen are shown immediately; nothing is hidden for reduced-motion users.
+  if (!reduce) {
+    var pending = [];
+    [].slice.call(document.querySelectorAll('.card,.phase,.guard3>article,.measure,.measure-row>div,.term,.quotes blockquote,.fstep,.faq details')).forEach(function (el) {
+      if (el.getBoundingClientRect().top < window.innerHeight) return;
+      var i = [].indexOf.call(el.parentNode.children, el);
+      el.style.setProperty('--rvd', Math.min(i, 5) * 90 + 'ms');
+      el.classList.add('rv');
+      pending.push(el);
+    });
+    var show = function (el) {
+      el.classList.add('in');
+      setTimeout(function () { el.classList.remove('rv', 'in'); el.style.removeProperty('--rvd'); }, 1200);
+    };
+    var ticking = false;
+    var check = function () {
+      ticking = false;
+      var limit = window.innerHeight * 0.92;
+      pending = pending.filter(function (el) {
+        if (el.getBoundingClientRect().top < limit) { show(el); return false; }
+        return true;
+      });
+      if (!pending.length) { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); }
+    };
+    var onScroll = function () { if (!ticking) { ticking = true; requestAnimationFrame(check); } };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    document.documentElement.classList.add('rv-ready');
+    // Never leave content hidden when printing.
+    window.addEventListener('beforeprint', function () { pending.forEach(show); pending = []; });
+  }
 })();
