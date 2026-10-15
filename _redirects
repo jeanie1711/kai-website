@@ -1,6 +1,3 @@
-/zero-trust-security-foundation   /zero-trust-security-foundation.html   200
-/resources                        /resources.html                         200
-/case-studies                     /case-studies.html                      200
-/glossary                         /glossary.html                          200
-/about                            /about.html                             200
-/kai-os                           /kai-os.html                            200
+# Cloudflare Pages serves clean URLs automatically (/about -> about.html),
+# so the Netlify-style 200 rewrites are not needed here and can cause
+# redirect loops. Add real 301 redirects below if any URL changes.
