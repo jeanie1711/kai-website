@@ -1,5 +1,6 @@
 /* KAI website: shared behaviour. Content never depends on this script; it only adds interaction. */
 (function () {
+  var vi = document.documentElement.lang === 'vi';
   // Mobile menu
   var btn = document.querySelector('.menu-btn');
   var menu = document.getElementById('site-menu');
@@ -45,7 +46,7 @@
     document.body.classList.toggle('motion-paused', paused);
     toggles.forEach(function (b) {
       b.hidden = reduce;
-      b.textContent = paused ? 'Resume motion' : 'Pause motion';
+      b.textContent = vi ? (paused ? 'Tiếp tục chuyển động' : 'Tạm dừng chuyển động') : (paused ? 'Resume motion' : 'Pause motion');
       b.setAttribute('aria-pressed', String(paused));
     });
   }

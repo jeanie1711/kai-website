@@ -685,3 +685,10 @@ b.pr{background:var(--hue-amber)}
 
 /* About: featured quote spanning the full row */
 .quotes blockquote.wide{grid-column:1/-1;font-size:17px;line-height:1.6;font-style:normal;font-weight:500;padding:22px 26px;border-left-color:var(--brand-2);background:var(--t50)}
+
+/* Language switch (EN | VI) */
+.lang-switch{display:inline-flex;align-items:center;padding:3px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.lang-switch a{font-size:12px;font-weight:600;letter-spacing:.04em;text-decoration:none;color:var(--muted);padding:5px 9px;border-radius:6px;line-height:1;transition:background .15s ease,color .15s ease}
+.lang-switch a:hover{color:var(--brand)}
+.lang-switch a[aria-current]{background:var(--ink);color:#fff}
+@media (max-width:420px){.nav-cta{padding:9px 12px}.lang-switch a{padding:5px 7px}}

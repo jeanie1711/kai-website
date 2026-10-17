@@ -31,3 +31,11 @@ Always run `node build.mjs` and commit `public/` together with your `src/` chang
 1. Create it in `src/pages/` (copy a sibling page as a starting point).
 2. Add it to `public/sitemap.xml` and, if useful for AI answer engines, `public/llms.txt`.
 3. If it belongs in the menu or footer, update `src/partials/nav.html` / `footer.html`.
+
+## Languages (English / Vietnamese)
+
+- English pages live in `src/pages/`; each has a Vietnamese twin at the same path under `src/pages/vi/`, served at `/vi/...`.
+- Pages under `vi/` automatically get `src/partials/nav.vi.html` and `footer.vi.html`, `<html lang="vi">`, hreflang alternates and the EN | VI switch (which links to the matching page).
+- Data files hold both languages: Vietnamese copy sits in a `vi` field next to the English (`workflows.json`, `glossary.json`, `zt-baseline.json`).
+- When you change copy on an English page, update its Vietnamese twin too. Links inside Vietnamese pages should point to `/vi/...`.
+- New page? Create both `src/pages/x.html` and `src/pages/vi/x.html`, and add both URLs to `public/sitemap.xml`.

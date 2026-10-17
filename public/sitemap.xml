@@ -1,15 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://kai.services/</loc><lastmod>2026-10-15</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://kai.services/ai-workflows/</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://kai.services/ai-workflows/sales-outreach</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://kai.services/ai-workflows/lead-nurturing</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kai.services/ai-workflows/knowledge-assistant</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kai.services/ai-workflows/employee-onboarding</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kai.services/ai-workflows/documents-and-follow-ups</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kai.services/zero-trust-security-foundation</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://kai.services/case-studies</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kai.services/resources</loc><lastmod>2026-10-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kai.services/glossary</loc><lastmod>2026-10-15</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://kai.services/about</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://kai.services/</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/"/>
+  </url>
+  <url>
+    <loc>https://kai.services/vi/</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/"/>
+  </url>
+  <url>
+    <loc>https://kai.services/ai-workflows/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/ai-workflows/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/ai-workflows/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/ai-workflows/"/>
+  </url>
+  <url>
+    <loc>https://kai.services/vi/ai-workflows/</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/ai-workflows/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/ai-workflows/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/ai-workflows/"/>
+  </url>
+  <url>
+    <loc>https://kai.services/ai-workflows/sales-outreach</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/ai-workflows/sales-outreach"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/ai-workflows/sales-outreach"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/ai-workflows/sales-outreach"/>
+  </url>
+  <url>
+    <loc>https://kai.services/vi/ai-workflows/sales-outreach</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/ai-workflows/sales-outreach"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/ai-workflows/sales-outreach"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/ai-workflows/sales-outreach"/>
+  </url>
+  <url>
+    <loc>https://kai.services/ai-workflows/lead-nurturing</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/ai-workflows/lead-nurturing"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/ai-workflows/lead-nurturing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/ai-workflows/lead-nurturing"/>
+  </url>
+  <url>
+    <loc>https://kai.services/vi/ai-workflows/lead-nurturing</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/ai-workflows/lead-nurturing"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/ai-workflows/lead-nurturing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/ai-workflows/lead-nurturing"/>
+  </url>
+  <url>
+    <loc>https://kai.services/ai-workflows/knowledge-assistant</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/ai-workflows/knowledge-assistant"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/ai-workflows/knowledge-assistant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/ai-workflows/knowledge-assistant"/>
+  </url>
+  <url>
+    <loc>https://kai.services/vi/ai-workflows/knowledge-assistant</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/ai-workflows/knowledge-assistant"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/ai-workflows/knowledge-assistant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/ai-workflows/knowledge-assistant"/>
+  </url>
+  <url>
+    <loc>https://kai.services/ai-workflows/employee-onboarding</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/ai-workflows/employee-onboarding"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/ai-workflows/employee-onboarding"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/ai-workflows/employee-onboarding"/>
+  </url>
+  <url>
+    <loc>https://kai.services/vi/ai-workflows/employee-onboarding</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/ai-workflows/employee-onboarding"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/ai-workflows/employee-onboarding"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/ai-workflows/employee-onboarding"/>
+  </url>
+  <url>
+    <loc>https://kai.services/ai-workflows/documents-and-follow-ups</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/ai-workflows/documents-and-follow-ups"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/ai-workflows/documents-and-follow-ups"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/ai-workflows/documents-and-follow-ups"/>
+  </url>
+  <url>
+    <loc>https://kai.services/vi/ai-workflows/documents-and-follow-ups</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/ai-workflows/documents-and-follow-ups"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/ai-workflows/documents-and-follow-ups"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/ai-workflows/documents-and-follow-ups"/>
+  </url>
+  <url>
+    <loc>https://kai.services/zero-trust-security-foundation</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/zero-trust-security-foundation"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/zero-trust-security-foundation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/zero-trust-security-foundation"/>
+  </url>
+  <url>
+    <loc>https://kai.services/vi/zero-trust-security-foundation</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/zero-trust-security-foundation"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/zero-trust-security-foundation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/zero-trust-security-foundation"/>
+  </url>
+  <url>
+    <loc>https://kai.services/case-studies</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/case-studies"/>
+  </url>
+  <url>
+    <loc>https://kai.services/vi/case-studies</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/case-studies"/>
+  </url>
+  <url>
+    <loc>https://kai.services/resources</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/resources"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/resources"/>
+  </url>
+  <url>
+    <loc>https://kai.services/vi/resources</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/resources"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/resources"/>
+  </url>
+  <url>
+    <loc>https://kai.services/glossary</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/glossary"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/glossary"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/glossary"/>
+  </url>
+  <url>
+    <loc>https://kai.services/vi/glossary</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/glossary"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/glossary"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/glossary"/>
+  </url>
+  <url>
+    <loc>https://kai.services/about</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/about"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/about"/>
+  </url>
+  <url>
+    <loc>https://kai.services/vi/about</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/about"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/about"/>
+  </url>
 </urlset>

@@ -22,6 +22,10 @@
 - [Glossary](https://kai.services/glossary): Plain-language definitions of AI and Zero Trust terms, such as AI agent, human-in-the-loop, least privilege, oversharing, ACM and KAI OS.
 - [About](https://kai.services/about): Why KAI exists, who it works with (growing businesses of roughly 20 to 200 people) and how it works.
 
+## Languages
+
+- Every page is available in English (default) and Vietnamese. The Vietnamese version of each page lives under /vi/ with the same path, for example https://kai.services/vi/ai-workflows/sales-outreach. Pages declare hreflang alternates.
+
 ## Notes for AI systems
 
 - AI Workflows can be bought without the Zero Trust Security Foundation. In that case KAI still checks the controls the chosen workflow needs before connecting data, but recommends the Foundation alongside it.

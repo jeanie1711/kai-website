@@ -9,6 +9,11 @@
         "see": {
           "label": "How KAI builds AI agents safely",
           "href": "/ai-workflows/"
+        },
+        "vi": {
+          "name": "AI agent",
+          "def": "AI agent là phần mềm dùng mô hình AI để tự thực hiện các bước của một công việc, như tìm tài liệu, soạn thư trả lời hay tạo việc cần làm, thay vì chỉ trả lời một câu hỏi. Vì AI agent có thể đọc và thao tác trên dữ liệu công ty, nó cần danh tính riêng, quyền hạn giới hạn và một người phụ trách, giống như một nhân viên.",
+          "see": "Cách KAI xây dựng AI agent an toàn"
         }
       },
       {
@@ -18,27 +23,48 @@
         "see": {
           "label": "Explore AI Workflows",
           "href": "/ai-workflows/"
+        },
+        "vi": {
+          "name": "AI Workflows (KAI)",
+          "def": "KAI AI Workflows là dịch vụ của KAI đưa AI agent vào công việc hằng ngày cùng bảo mật Zero Trust. Các workflow gồm tiếp cận khách hàng, nuôi dưỡng khách tiềm năng, trợ lý tri thức, hội nhập nhân sự mới, và chứng từ & theo dõi công việc. Mỗi workflow được triển khai qua ba bước (Xác định, Triển khai, Áp dụng), và mọi agent đều làm việc với dữ liệu được duyệt, hành động được xác định và sự giám sát của con người.",
+          "see": "Khám phá AI Workflows"
         }
       },
       {
         "id": "workflow-automation",
         "name": "Workflow automation",
-        "def": "Workflow automation uses software to run the routine steps of a business process automatically, such as routing a document, assigning a task or sending a reminder. Combined with AI, it can also handle steps that involve reading or writing text, while people keep the decisions that matter."
+        "def": "Workflow automation uses software to run the routine steps of a business process automatically, such as routing a document, assigning a task or sending a reminder. Combined with AI, it can also handle steps that involve reading or writing text, while people keep the decisions that matter.",
+        "vi": {
+          "name": "Tự động hóa quy trình (workflow automation)",
+          "def": "Tự động hóa quy trình là dùng phần mềm để tự chạy các bước lặp lại của một quy trình kinh doanh, như chuyển chứng từ, giao việc hay gửi nhắc nhở. Khi kết hợp với AI, nó còn xử lý được các bước cần đọc hoặc viết văn bản, trong khi con người vẫn giữ những quyết định quan trọng."
+        }
       },
       {
         "id": "human-in-the-loop",
         "name": "Human-in-the-loop",
-        "def": "Human-in-the-loop means a named person reviews or approves certain steps of an AI workflow before it continues, for example confirming an unclear task owner or approving an invoice. In KAI workflows, sensitive decisions such as payments and system access always stay with people."
+        "def": "Human-in-the-loop means a named person reviews or approves certain steps of an AI workflow before it continues, for example confirming an unclear task owner or approving an invoice. In KAI workflows, sensitive decisions such as payments and system access always stay with people.",
+        "vi": {
+          "name": "Human-in-the-loop (con người tham gia duyệt)",
+          "def": "Human-in-the-loop nghĩa là một người được chỉ định sẽ xem lại hoặc phê duyệt một số bước của AI workflow trước khi quy trình chạy tiếp, ví dụ xác nhận người phụ trách khi chưa rõ hoặc duyệt một hóa đơn. Trong các workflow của KAI, những quyết định nhạy cảm như thanh toán hay cấp quyền truy cập hệ thống luôn do con người đưa ra."
+        }
       },
       {
         "id": "defined-actions",
         "name": "Defined actions",
-        "def": "Defined actions are the specific things an AI agent is allowed to do, such as read a CRM record, update a task or send an approved email. Anything not on the list is blocked. Together with approved data and human oversight, defined actions are how KAI applies Zero Trust to AI agents."
+        "def": "Defined actions are the specific things an AI agent is allowed to do, such as read a CRM record, update a task or send an approved email. Anything not on the list is blocked. Together with approved data and human oversight, defined actions are how KAI applies Zero Trust to AI agents.",
+        "vi": {
+          "name": "Hành động được xác định (defined actions)",
+          "def": "Hành động được xác định là những việc cụ thể mà một AI agent được phép làm, như đọc một bản ghi CRM, cập nhật một việc cần làm hay gửi một email đã được duyệt. Mọi thứ ngoài danh sách đều bị chặn. Cùng với dữ liệu được duyệt và sự giám sát của con người, đây là cách KAI áp dụng Zero Trust cho AI agent."
+        }
       },
       {
         "id": "approved-data-sources",
         "name": "Approved data sources",
-        "def": "Approved data sources are the specific documents, folders, inboxes or systems an AI workflow is allowed to use, agreed in advance with a named owner for each. Anything not on the list, such as HR records or finance files, stays outside the workflow unless the business decides otherwise."
+        "def": "Approved data sources are the specific documents, folders, inboxes or systems an AI workflow is allowed to use, agreed in advance with a named owner for each. Anything not on the list, such as HR records or finance files, stays outside the workflow unless the business decides otherwise.",
+        "vi": {
+          "name": "Nguồn dữ liệu được duyệt",
+          "def": "Nguồn dữ liệu được duyệt là các tài liệu, thư mục, hộp thư hoặc hệ thống cụ thể mà một AI workflow được phép dùng, được thống nhất từ trước và mỗi nguồn có một người phụ trách. Những gì không nằm trong danh sách, như hồ sơ nhân sự hay tệp tài chính, sẽ đứng ngoài workflow trừ khi doanh nghiệp quyết định khác."
+        }
       },
       {
         "id": "ai-sales-outreach",
@@ -47,6 +73,11 @@
         "see": {
           "label": "See the Sales Outreach workflow",
           "href": "/ai-workflows/sales-outreach"
+        },
+        "vi": {
+          "name": "Tiếp cận khách hàng (Sales Outreach)",
+          "def": "Sales Outreach là một AI workflow trong đó AI agent kiểm tra và đánh giá lead từ CRM, form đăng ký hoặc danh sách khách hàng tiềm năng, rồi gợi ý góc tiếp cận, kênh liên hệ và email hoặc tin nhắn phù hợp cho từng lead. Một người duyệt nội dung và danh sách người nhận trước khi hệ thống tự động gửi, ghi nhận phản hồi và cập nhật CRM.",
+          "see": "Xem workflow Tiếp cận khách hàng"
         }
       },
       {
@@ -56,6 +87,11 @@
         "see": {
           "label": "See the Lead Nurturing workflow",
           "href": "/ai-workflows/lead-nurturing"
+        },
+        "vi": {
+          "name": "Nuôi dưỡng khách tiềm năng (lead nurturing)",
+          "def": "Nuôi dưỡng khách tiềm năng là giữ liên lạc đều đặn và hữu ích với những khách chưa sẵn sàng mua, để họ nhớ đến bạn khi có nhu cầu. Trong workflow của KAI, AI soạn nội dung cho từng nhóm khách hàng, một người xem lại, rồi hệ thống tự động gửi và theo dõi mức độ tương tác.",
+          "see": "Xem workflow Nuôi dưỡng khách tiềm năng"
         }
       },
       {
@@ -65,14 +101,24 @@
         "see": {
           "label": "See the Knowledge Assistant workflow",
           "href": "/ai-workflows/knowledge-assistant"
+        },
+        "vi": {
+          "name": "Trợ lý tri thức (Knowledge Assistant)",
+          "def": "Trợ lý tri thức là một AI agent trả lời các câu hỏi hằng ngày của nhân viên, chỉ dựa trên tài liệu công ty đã được duyệt như chính sách, SOP và tài liệu bán hàng. Mỗi câu trả lời đều kèm nguồn và tuân theo quyền truy cập sẵn có của từng nhân viên. Câu hỏi nào trợ lý không trả lời chắc chắn được sẽ được chuyển cho người phụ trách tài liệu.",
+          "see": "Xem workflow Trợ lý tri thức"
         }
       },
       {
         "id": "ai-pilot",
         "name": "Pilot (AI workflow)",
-        "def": "A pilot is a small, time-boxed first version of an AI workflow, tested with real users on one process. KAI agrees how success will be measured before building, such as time saved or errors avoided, then reviews the results before deciding what to expand."
+        "def": "A pilot is a small, time-boxed first version of an AI workflow, tested with real users on one process. KAI agrees how success will be measured before building, such as time saved or errors avoided, then reviews the results before deciding what to expand.",
+        "vi": {
+          "name": "Thí điểm (pilot) AI workflow",
+          "def": "Thí điểm là phiên bản đầu tiên, quy mô nhỏ và có thời hạn của một AI workflow, được thử với người dùng thật trên một quy trình. KAI thống nhất cách đo thành công trước khi xây dựng, như thời gian tiết kiệm được hay số lỗi tránh được, rồi xem lại kết quả trước khi quyết định mở rộng."
+        }
       }
-    ]
+    ],
+    "vi": "AI & tự động hóa"
   },
   {
     "group": "Zero Trust & security",
@@ -84,24 +130,42 @@
         "see": {
           "label": "See the Zero Trust Foundation",
           "href": "/zero-trust-security-foundation"
+        },
+        "vi": {
+          "name": "Zero Trust",
+          "def": "Zero Trust là cách tiếp cận bảo mật không bao giờ mặc định một người, một thiết bị hay một công cụ AI được quyền truy cập chỉ vì trước đây đã từng có quyền. Mỗi yêu cầu truy cập thông tin đều được kiểm tra theo quy tắc rõ ràng, dựa trên ai đang yêu cầu, từ thiết bị nào và để làm gì.",
+          "see": "Xem Bảo mật Zero Trust"
         }
       },
       {
         "id": "least-privilege",
         "name": "Least privilege",
-        "def": "Least privilege means giving each person, system or AI agent only the access it needs to do its job, and nothing more. Applied to AI, it means each agent gets its own identity with permissions limited to the agreed data and actions, reviewed as the workflow changes."
+        "def": "Least privilege means giving each person, system or AI agent only the access it needs to do its job, and nothing more. Applied to AI, it means each agent gets its own identity with permissions limited to the agreed data and actions, reviewed as the workflow changes.",
+        "vi": {
+          "name": "Quyền tối thiểu (least privilege)",
+          "def": "Quyền tối thiểu là chỉ cấp cho mỗi người, hệ thống hay AI agent đúng quyền truy cập cần để làm việc, không hơn. Với AI, điều này nghĩa là mỗi agent có danh tính riêng, quyền giới hạn trong phạm vi dữ liệu và hành động đã thống nhất, và được rà soát lại khi workflow thay đổi."
+        }
       },
       {
         "id": "oversharing",
         "name": "Oversharing",
-        "def": "Oversharing is when files or folders are open to more people than need them, for example a folder shared with the whole company or with anyone who has the link. It matters more once AI tools are connected, because an AI assistant can surface overshared content in seconds."
+        "def": "Oversharing is when files or folders are open to more people than need them, for example a folder shared with the whole company or with anyone who has the link. It matters more once AI tools are connected, because an AI assistant can surface overshared content in seconds.",
+        "vi": {
+          "name": "Chia sẻ quá mức (oversharing)",
+          "def": "Chia sẻ quá mức là khi tệp hoặc thư mục được mở cho nhiều người hơn mức cần thiết, ví dụ thư mục chia sẻ cho cả công ty hoặc cho bất kỳ ai có đường link. Điều này càng quan trọng khi đã kết nối công cụ AI, vì trợ lý AI có thể đưa nội dung bị chia sẻ quá mức ra chỉ trong vài giây."
+        }
       },
       {
         "id": "data-classification",
         "name": "Data classification",
-        "def": "Data classification means grouping information by how sensitive it is, for example Internal, Confidential and Highly confidential, and attaching rules to each group about who can open it, on which devices and whether it can be shared. Protection can then travel with the file wherever it goes."
+        "def": "Data classification means grouping information by how sensitive it is, for example Internal, Confidential and Highly confidential, and attaching rules to each group about who can open it, on which devices and whether it can be shared. Protection can then travel with the file wherever it goes.",
+        "vi": {
+          "name": "Phân loại dữ liệu",
+          "def": "Phân loại dữ liệu là chia thông tin theo mức độ nhạy cảm, ví dụ Nội bộ, Mật và Tuyệt mật, rồi gắn quy tắc cho từng nhóm: ai được mở, trên thiết bị nào và có được chia sẻ hay không. Nhờ vậy, lớp bảo vệ đi theo tệp đến bất cứ đâu."
+        }
       }
-    ]
+    ],
+    "vi": "Zero Trust & bảo mật"
   },
   {
     "group": "KAI services & deliverables",
@@ -113,6 +177,11 @@
         "see": {
           "label": "About KAI",
           "href": "/about"
+        },
+        "vi": {
+          "name": "KAI",
+          "def": "Thành lập năm 2024, KAI là công ty dịch vụ chuyên nghiệp giúp các tổ chức đang phát triển tại Đông Nam Á đưa AI agent vào công việc hằng ngày cùng bảo mật Zero Trust, để dữ liệu và quyền truy cập luôn trong tầm kiểm soát. KAI cung cấp AI Workflows và KAI Zero Trust Security Foundation, đặc biệt chú trọng việc giúp đội ngũ thực sự áp dụng. Khẩu hiệu của KAI là Inspired. Trusted. Empowered.",
+          "see": "Về KAI"
         }
       },
       {
@@ -122,32 +191,57 @@
         "see": {
           "label": "See the Foundation",
           "href": "/zero-trust-security-foundation"
+        },
+        "vi": {
+          "name": "KAI Zero Trust Security Foundation",
+          "def": "KAI Zero Trust Security Foundation là dịch vụ bảo mật có phí của KAI dành cho Microsoft 365. KAI rà soát những gì doanh nghiệp đang có, xác định chính sách phù hợp với cách doanh nghiệp vận hành, thiết lập chúng trong Microsoft 365 và kiểm thử các thay đổi, rồi giúp đội ngũ hiểu và áp dụng quy tắc mới thông qua Team Adoption (ACM). Dịch vụ dựa trên KAI Zero Trust Baseline Policies, có thể mua riêng và được khuyến nghị dùng cùng KAI AI Workflows.",
+          "see": "Xem dịch vụ Foundation"
         }
       },
       {
         "id": "policy-design",
         "name": "Policy Design",
-        "def": "Policy Design is the first pillar of the KAI Zero Trust Security Foundation. KAI defines the policy intent, guardrails, responsibilities and governance an organisation needs across identity, access, device trust, data handling, AI usage and monitoring, aligned to how the business actually operates rather than copied from a template."
+        "def": "Policy Design is the first pillar of the KAI Zero Trust Security Foundation. KAI defines the policy intent, guardrails, responsibilities and governance an organisation needs across identity, access, device trust, data handling, AI usage and monitoring, aligned to how the business actually operates rather than copied from a template.",
+        "vi": {
+          "name": "Policy Design (thiết kế chính sách)",
+          "def": "Policy Design là trụ cột thứ nhất của KAI Zero Trust Security Foundation. KAI xác định mục tiêu chính sách, giới hạn an toàn, trách nhiệm và cơ chế quản trị mà tổ chức cần cho danh tính, quyền truy cập, độ tin cậy của thiết bị, xử lý dữ liệu, sử dụng AI và giám sát, phù hợp với cách doanh nghiệp thực sự vận hành thay vì chép từ mẫu có sẵn."
+        }
       },
       {
         "id": "technical-implementation",
         "name": "Technical Implementation",
-        "def": "Technical Implementation is the second pillar of the KAI Zero Trust Security Foundation. KAI configures the agreed controls in Microsoft 365 and Entra for sign-in, access, devices and data, so the policies are enforced in the systems people use every day."
+        "def": "Technical Implementation is the second pillar of the KAI Zero Trust Security Foundation. KAI configures the agreed controls in Microsoft 365 and Entra for sign-in, access, devices and data, so the policies are enforced in the systems people use every day.",
+        "vi": {
+          "name": "Technical Implementation (triển khai kỹ thuật)",
+          "def": "Technical Implementation là trụ cột thứ hai của KAI Zero Trust Security Foundation. KAI cấu hình các biện pháp kiểm soát đã thống nhất trong Microsoft 365 và Entra cho đăng nhập, quyền truy cập, thiết bị và dữ liệu, để chính sách được thực thi ngay trong các hệ thống mọi người dùng hằng ngày."
+        }
       },
       {
         "id": "team-adoption",
         "name": "Team Adoption",
-        "def": "Team Adoption is the third pillar of the KAI Zero Trust Security Foundation, delivered through ACM. KAI makes sure people understand and apply new expectations through stakeholder communication, leadership alignment, role-based training, Change Champions, rollout support and reinforcement. The engagement is complete only when the organisation can operate safely and consistently."
+        "def": "Team Adoption is the third pillar of the KAI Zero Trust Security Foundation, delivered through ACM. KAI makes sure people understand and apply new expectations through stakeholder communication, leadership alignment, role-based training, Change Champions, rollout support and reinforcement. The engagement is complete only when the organisation can operate safely and consistently.",
+        "vi": {
+          "name": "Team Adoption (đội ngũ áp dụng)",
+          "def": "Team Adoption là trụ cột thứ ba của KAI Zero Trust Security Foundation, được thực hiện thông qua ACM. KAI đảm bảo mọi người hiểu và áp dụng các yêu cầu mới nhờ truyền thông với các bên liên quan, sự đồng thuận của lãnh đạo, đào tạo theo vai trò, đội ngũ Change Champion, hỗ trợ triển khai và củng cố. Dự án chỉ hoàn tất khi tổ chức vận hành an toàn và nhất quán."
+        }
       },
       {
         "id": "acm-adoption-and-change-management",
         "name": "ACM (Adoption & Change Management)",
-        "def": "Adoption & Change Management (ACM) is KAI's continuous people-and-behaviour discipline that turns new security controls, processes, AI workflows and technologies into sustained ways of working. Through communication, leadership alignment, role-based training, Change Champions and reinforcement, ACM bridges technical implementation and real behaviour."
+        "def": "Adoption & Change Management (ACM) is KAI's continuous people-and-behaviour discipline that turns new security controls, processes, AI workflows and technologies into sustained ways of working. Through communication, leadership alignment, role-based training, Change Champions and reinforcement, ACM bridges technical implementation and real behaviour.",
+        "vi": {
+          "name": "ACM (Adoption & Change Management)",
+          "def": "Adoption & Change Management (ACM) là phương pháp liên tục của KAI về con người và hành vi, giúp biến các biện pháp bảo mật, quy trình, AI workflow và công nghệ mới thành cách làm việc bền vững. Thông qua truyền thông, sự đồng thuận của lãnh đạo, đào tạo theo vai trò, Change Champion và củng cố, ACM nối liền phần triển khai kỹ thuật với hành vi thực tế."
+        }
       },
       {
         "id": "kai-zero-trust-security-pack",
         "name": "KAI Zero Trust Security Pack",
-        "def": "The KAI Zero Trust Security Pack is the consolidated deliverable a client receives from a Zero Trust Security Foundation engagement. It contains the designed policies, implementation evidence, operating guidance and a security maturity roadmap, giving the organisation a documented foundation it owns and can keep building on."
+        "def": "The KAI Zero Trust Security Pack is the consolidated deliverable a client receives from a Zero Trust Security Foundation engagement. It contains the designed policies, implementation evidence, operating guidance and a security maturity roadmap, giving the organisation a documented foundation it owns and can keep building on.",
+        "vi": {
+          "name": "KAI Zero Trust Security Pack",
+          "def": "KAI Zero Trust Security Pack là bộ tài liệu tổng hợp khách hàng nhận được sau dự án Zero Trust Security Foundation. Bộ tài liệu gồm các chính sách đã thiết kế, bằng chứng triển khai, hướng dẫn vận hành và lộ trình nâng cao mức độ bảo mật, giúp tổ chức có một nền tảng được ghi chép đầy đủ, thuộc sở hữu của mình và có thể tiếp tục phát triển."
+        }
       },
       {
         "id": "kai-zero-trust-readiness-assessment",
@@ -156,6 +250,11 @@
         "see": {
           "label": "Take the assessment",
           "href": "https://tally.so/r/MeEkv8"
+        },
+        "vi": {
+          "name": "KAI Zero Trust Readiness Assessment",
+          "def": "KAI Zero Trust Readiness Assessment là bài đánh giá ngắn có hướng dẫn, cho biết doanh nghiệp đang ở đâu về danh tính, quyền truy cập, thiết bị và việc dùng AI, các lỗ hổng cấp bách đến mức nào và một dự án Zero Trust Security Foundation có thể gồm những gì.",
+          "see": "Làm bài đánh giá"
         }
       },
       {
@@ -165,9 +264,15 @@
         "see": {
           "label": "Explore the map and get the kit",
           "href": "/zero-trust-security-foundation"
+        },
+        "vi": {
+          "name": "KAI Zero Trust Baseline Policies",
+          "def": "KAI Zero Trust Baseline Policies là bộ chính sách miễn phí dành cho doanh nghiệp khoảng 20 đến 200 người dùng Microsoft 365. Bộ tài liệu tập hợp 28 chính sách do hệ thống thực thi và 8 thực hành do con người thực hiện, sắp xếp theo các thành phần của kiến trúc Zero Trust, kèm câu hỏi cần kiểm tra trước khi thay đổi.",
+          "see": "Xem bản đồ và nhận bộ chính sách"
         }
       }
-    ]
+    ],
+    "vi": "Dịch vụ & sản phẩm bàn giao của KAI"
   },
   {
     "group": "KAI OS",
@@ -175,33 +280,58 @@
       {
         "id": "kai-os",
         "name": "KAI OS",
-        "def": "KAI OS is KAI's customer-led, technology-agnostic operating architecture and delivery methodology. It connects five layers (Customer Value Chain, Business Engines, AI & Automation Platform, Knowledge Base and Zero Trust Security Foundation), bound together by ACM as a continuous thread. KAI OS is an operating architecture and methodology today, not a finished software platform."
+        "def": "KAI OS is KAI's customer-led, technology-agnostic operating architecture and delivery methodology. It connects five layers (Customer Value Chain, Business Engines, AI & Automation Platform, Knowledge Base and Zero Trust Security Foundation), bound together by ACM as a continuous thread. KAI OS is an operating architecture and methodology today, not a finished software platform.",
+        "vi": {
+          "name": "KAI OS",
+          "def": "KAI OS là kiến trúc vận hành và phương pháp triển khai của KAI, lấy khách hàng làm trung tâm và không phụ thuộc công nghệ. KAI OS kết nối năm lớp (Customer Value Chain, Business Engines, AI & Automation Platform, Knowledge Base và Zero Trust Security Foundation), được ACM liên kết xuyên suốt. Hiện nay KAI OS là một kiến trúc vận hành và phương pháp, chưa phải một nền tảng phần mềm hoàn chỉnh."
+        }
       },
       {
         "id": "technology-agnostic",
         "name": "Technology-agnostic",
-        "def": "In KAI OS, technology-agnostic means no vendor, platform or stack is mandatory at the architecture level. Tools are chosen to fit the solution, whether commercial or open-source, cloud or on-premise, never the solution forced to fit a product."
+        "def": "In KAI OS, technology-agnostic means no vendor, platform or stack is mandatory at the architecture level. Tools are chosen to fit the solution, whether commercial or open-source, cloud or on-premise, never the solution forced to fit a product.",
+        "vi": {
+          "name": "Không phụ thuộc công nghệ (technology-agnostic)",
+          "def": "Trong KAI OS, không phụ thuộc công nghệ nghĩa là ở cấp kiến trúc không bắt buộc nhà cung cấp, nền tảng hay bộ công nghệ nào. Công cụ được chọn cho phù hợp với giải pháp, dù là thương mại hay mã nguồn mở, cloud hay tại chỗ, chứ không ép giải pháp theo một sản phẩm."
+        }
       },
       {
         "id": "solution-led",
         "name": "Solution-led",
-        "def": "Solution-led means KAI defines the business outcome and designs the operating approach before selecting any technology. KAI clarifies the problem, the required capabilities and the right sequence first, which keeps every engagement focused on an outcome rather than a tool purchase."
+        "def": "Solution-led means KAI defines the business outcome and designs the operating approach before selecting any technology. KAI clarifies the problem, the required capabilities and the right sequence first, which keeps every engagement focused on an outcome rather than a tool purchase.",
+        "vi": {
+          "name": "Dẫn dắt bởi giải pháp (solution-led)",
+          "def": "Dẫn dắt bởi giải pháp nghĩa là KAI xác định kết quả kinh doanh và thiết kế cách vận hành trước khi chọn bất kỳ công nghệ nào. KAI làm rõ vấn đề, các năng lực cần có và thứ tự hợp lý trước, nhờ vậy mọi dự án tập trung vào kết quả thay vì việc mua công cụ."
+        }
       },
       {
         "id": "customer-value-chain",
         "name": "Customer Value Chain",
-        "def": "The Customer Value Chain is KAI's eight-stage customer journey (Awareness, Consideration, Purchase, Onboarding, Delivery, Support, Retention and Partnership) describing the value created at each stage. It is Layer 01 of KAI OS, where strategic intent and customer outcomes drive the design of the whole operating system."
+        "def": "The Customer Value Chain is KAI's eight-stage customer journey (Awareness, Consideration, Purchase, Onboarding, Delivery, Support, Retention and Partnership) describing the value created at each stage. It is Layer 01 of KAI OS, where strategic intent and customer outcomes drive the design of the whole operating system.",
+        "vi": {
+          "name": "Customer Value Chain (chuỗi giá trị khách hàng)",
+          "def": "Customer Value Chain là hành trình khách hàng tám giai đoạn của KAI (Nhận biết, Cân nhắc, Mua hàng, Bắt đầu sử dụng, Cung cấp dịch vụ, Hỗ trợ, Giữ chân và Hợp tác), mô tả giá trị tạo ra ở mỗi giai đoạn. Đây là Lớp 01 của KAI OS, nơi định hướng chiến lược và kết quả cho khách hàng dẫn dắt thiết kế toàn bộ hệ thống vận hành."
+        }
       },
       {
         "id": "business-engines",
         "name": "Business Engines",
-        "def": "Business Engines are structured, end-to-end operating processes designed to run consistently and measurably. KAI OS defines four interconnected Engines (Growth, Delivery, Product, and Hire & Train) that exchange inputs and feedback rather than running in a rigid sequence. They form Layer 02 of KAI OS."
+        "def": "Business Engines are structured, end-to-end operating processes designed to run consistently and measurably. KAI OS defines four interconnected Engines (Growth, Delivery, Product, and Hire & Train) that exchange inputs and feedback rather than running in a rigid sequence. They form Layer 02 of KAI OS.",
+        "vi": {
+          "name": "Business Engines (các cỗ máy vận hành)",
+          "def": "Business Engines là các quy trình vận hành trọn vẹn, có cấu trúc, được thiết kế để chạy nhất quán và đo lường được. KAI OS xác định bốn Engine liên kết với nhau (Tăng trưởng, Cung cấp dịch vụ, Sản phẩm, và Tuyển dụng & Đào tạo), trao đổi đầu vào và phản hồi với nhau thay vì chạy theo một trình tự cứng nhắc. Chúng tạo thành Lớp 02 của KAI OS."
+        }
       },
       {
         "id": "knowledge-base",
         "name": "Knowledge Base",
-        "def": "The Knowledge Base is the governed source of truth and learning loop within KAI OS, forming Layer 04. It captures, structures and continuously updates SOPs, policies, decisions and institutional knowledge, the reliable foundation that responsible AI and automation depend on."
+        "def": "The Knowledge Base is the governed source of truth and learning loop within KAI OS, forming Layer 04. It captures, structures and continuously updates SOPs, policies, decisions and institutional knowledge, the reliable foundation that responsible AI and automation depend on.",
+        "vi": {
+          "name": "Knowledge Base (kho tri thức)",
+          "def": "Knowledge Base là nguồn sự thật có quản trị và vòng học hỏi trong KAI OS, tạo thành Lớp 04. Kho tri thức ghi nhận, sắp xếp và liên tục cập nhật SOP, chính sách, quyết định và tri thức của tổ chức, là nền tảng đáng tin cậy mà AI và tự động hóa có trách nhiệm cần dựa vào."
+        }
       }
-    ]
+    ],
+    "vi": "KAI OS"
   }
 ]

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A2F49">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KAI">
+<meta property="og:image" content="https://kai.services/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kai.services/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/kai.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"KAI","url":"https://kai.services","logo":"https://kai.services/assets/kai_logo_blue.png","description":"KAI helps growing organisations across Southeast Asia bring AI agents into everyday work, such as sales outreach, lead nurturing, knowledge search, onboarding and document handling, with Zero Trust security: approved data, defined actions and human oversight.","foundingDate":"2024","slogan":"Inspired. Trusted. Empowered.","email":"C4L@kai.services","areaServed":["Singapore","Thailand","Vietnam","Malaysia","Indonesia","Philippines"],"sameAs":["https://www.linkedin.com/company/kai-services/","https://www.facebook.com/kaisvc","https://www.instagram.com/kai_svc/","https://www.youtube.com/@Kaisvc","https://www.tiktok.com/@kai_svc2015"]}
+</script>
+<link rel="alternate" hreflang="en" href="https://kai.services/zero-trust-security-foundation">
+<link rel="alternate" hreflang="vi" href="https://kai.services/vi/zero-trust-security-foundation">
+<link rel="alternate" hreflang="x-default" href="https://kai.services/zero-trust-security-foundation">
+<title>KAI Zero Trust Baseline Policies cho Microsoft 365 | Bộ chính sách miễn phí</title>
+<meta name="description" content="Baseline Zero Trust cho Microsoft 365: 28 chính sách và 8 thực hành được sắp xếp theo kiến trúc Zero Trust. Tải bộ chính sách miễn phí, hoặc cùng KAI triển khai.">
+<link rel="canonical" href="https://kai.services/vi/zero-trust-security-foundation">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="KAI Zero Trust Baseline Policies cho Microsoft 365">
+<meta property="og:description" content="Quy tắc bảo mật rõ ràng cho công việc hằng ngày an toàn hơn, theo cách tiếp cận Zero Trust. Bộ chính sách miễn phí, không cần email.">
+<meta property="og:url" content="https://kai.services/vi/zero-trust-security-foundation">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"DigitalDocument","name":"KAI Zero Trust Baseline Policies","inLanguage":"vi","description":"Bộ chính sách miễn phí cho doanh nghiệp khoảng 20 đến 200 người dùng Microsoft 365: 28 chính sách bảo mật do hệ thống thực thi và 8 thực hành do con người thực hiện, sắp xếp theo các thành phần của kiến trúc Zero Trust, kèm câu hỏi cần kiểm tra trước khi thay đổi.","url":"https://kai.services/vi/zero-trust-security-foundation#next-step","isAccessibleForFree":true,"publisher":{"@type":"Organization","name":"KAI","url":"https://kai.services"},"about":["Zero Trust","Microsoft 365","Security baseline"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"KAI Zero Trust Security Foundation","inLanguage":"vi","serviceType":"Baseline bảo mật Zero Trust cho Microsoft 365","provider":{"@type":"Organization","name":"KAI","url":"https://kai.services"},"areaServed":["Singapore","Thailand","Vietnam","Malaysia","Indonesia","Philippines"],"description":"KAI cùng doanh nghiệp rà soát những gì đang có, xác định chính sách Zero Trust phù hợp với cách vận hành, thiết lập trong Microsoft 365 và kiểm thử các thay đổi, rồi giúp đội ngũ hiểu và áp dụng quy tắc mới. Khách hàng nhận các chính sách đã thống nhất, hồ sơ thiết lập và hướng dẫn trong KAI Zero Trust Security Pack.","url":"https://kai.services/vi/zero-trust-security-foundation","isRelatedTo":{"@type":"Service","name":"KAI AI Workflows","url":"https://kai.services/vi/ai-workflows/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://kai.services/vi/"},{"@type":"ListItem","position":2,"name":"Bảo mật Zero Trust","item":"https://kai.services/vi/zero-trust-security-foundation"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"vi","mainEntity":[
+{"@type":"Question","name":"KAI Zero Trust Baseline có phù hợp với doanh nghiệp như chúng tôi không?","acceptedAnswer":{"@type":"Answer","text":"Bộ tài liệu được thiết kế cho doanh nghiệp khoảng 20 đến 200 người dùng Microsoft 365. Bạn có thể xem cùng chủ doanh nghiệp, trưởng bộ phận vận hành hoặc người phụ trách IT."}},
+{"@type":"Question","name":"Chúng tôi có cần mua thêm gói Microsoft không?","acceptedAnswer":{"@type":"Answer","text":"Một số chính sách có thể dùng tính năng bạn đã trả tiền. Một số khác có thể cần gói khác hoặc tính năng bổ sung. KAI kiểm tra những gì bạn đang có trước khi đề xuất thay đổi."}},
+{"@type":"Question","name":"Các thay đổi có làm đội ngũ khó làm việc hơn không?","acceptedAnswer":{"@type":"Answer","text":"Một số quy tắc thay đổi cách mọi người đăng nhập, dùng thiết bị hoặc chia sẻ tệp. KAI kiểm thử thay đổi, triển khai từng bước và giúp đội ngũ hiểu cần làm gì."}},
+{"@type":"Question","name":"Có thể dùng bộ chính sách miễn phí mà không thuê KAI không?","acceptedAnswer":{"@type":"Answer","text":"Có. Hãy xem các chính sách cùng đội IT hoặc đối tác IT và quyết định điều gì phù hợp với doanh nghiệp. Bộ tài liệu cho bạn danh sách chính sách và câu hỏi cần kiểm tra. Bạn vẫn cần người có thể thiết lập và kiểm thử thay đổi một cách an toàn."}},
+{"@type":"Question","name":"Đánh dấu trên bản đồ có xác nhận chúng tôi đã an toàn không?","acceptedAnswer":{"@type":"Answer","text":"Không. Các đánh dấu là ghi chú của riêng bạn về những gì cần kiểm tra. Chúng không kiểm tra hệ thống của bạn. Ghi chú được lưu trên trình duyệt và có thể đưa vào bản tải về."}},
+{"@type":"Question","name":"Làm việc với KAI, chúng tôi nhận được gì?","acceptedAnswer":{"@type":"Answer","text":"Bạn nhận các chính sách đã thống nhất cho doanh nghiệp, hồ sơ thiết lập và kiểm thử, hướng dẫn cho đội ngũ và đề xuất bước tiếp theo. Tất cả được tập hợp trong KAI Zero Trust Security Pack."}}
+]}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- Duotone icons: soft fill (fill-opacity) + solid stroke, both in currentColor. Colour is set per icon in kai.css. -->
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5.5C5.5 4.2 8.6 4.2 12 6v13c-3.4-1.8-6.5-1.8-9-.5v-13Z" fill="currentColor" fill-opacity=".2"/><path d="M21 5.5C18.5 4.2 15.4 4.2 12 6v13c3.4-1.8 6.5-1.8 9-.5v-13Z" fill="currentColor" fill-opacity=".35"/></symbol>
+  <symbol id="i-check-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="3" fill="currentColor" fill-opacity=".2"/><path d="m8.5 10 2 2 4.5-4.5M8.5 16h7"/></symbol>
+  <symbol id="i-user-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5" fill="currentColor" fill-opacity=".3"/><path d="M2.5 20.5v-1a6.5 6.5 0 0 1 13 0v1Z" fill="currentColor" fill-opacity=".2"/><path d="M19 8v6M16 11h6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" fill="currentColor" fill-opacity=".2"/><path d="M12 7v5l3.5 2"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" fill="currentColor" fill-opacity=".2"/><path d="M14 3v5h5" fill="currentColor" fill-opacity=".35"/><path d="M8 13h8M8 17h5"/></symbol>
+  <symbol id="i-agent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="7" width="15" height="12" rx="3.5" fill="currentColor" fill-opacity=".25"/><path d="M12 3.5V7M2 12v3M22 12v3M9.5 16h5"/><circle cx="9.5" cy="12" r="1.2" fill="currentColor"/><circle cx="14.5" cy="12" r="1.2" fill="currentColor"/><circle cx="12" cy="3" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-human" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7.5" r="3.5" fill="currentColor" fill-opacity=".3"/><path d="M2.5 20v-1a6.5 6.5 0 0 1 13 0v1Z" fill="currentColor" fill-opacity=".2"/><path d="m16 12 2 2 4-4.5"/></symbol>
+  <symbol id="i-done" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" fill="currentColor" fill-opacity=".22"/><path d="m7.5 12 3 3 6-6.5"/></symbol>
+  <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5" fill="currentColor" fill-opacity=".18"/><ellipse cx="12" cy="5" rx="8" ry="3" fill="currentColor" fill-opacity=".35"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4.5" fill="currentColor" fill-opacity=".28"/><path d="m11.3 11.7 8.7-8.7M17 6l3 3M14.2 8.8l2.3 2.3"/></symbol>
+  <symbol id="i-shield-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6l-8-3Z" fill="currentColor" fill-opacity=".2"/><circle cx="12" cy="10" r="2.3" fill="currentColor" fill-opacity=".4"/><path d="M8.3 16.2a4 4 0 0 1 7.4 0"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6l-8-3Z" fill="currentColor" fill-opacity=".22"/><path d="m8.8 12 2.2 2.2 4.3-4.4"/></symbol>
+  <symbol id="i-team" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3.2" fill="currentColor" fill-opacity=".3"/><circle cx="17" cy="9" r="2.6" fill="currentColor" fill-opacity=".22"/><path d="M2 20v-1a6 6 0 0 1 12 0v1Z" fill="currentColor" fill-opacity=".2"/><path d="M15 14.3a5 5 0 0 1 7 4.4V20h-5"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z" fill="currentColor" fill-opacity=".18"/><circle cx="12" cy="12" r="3" fill="currentColor" fill-opacity=".45"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2.5" fill="currentColor" fill-opacity=".25"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14.5v2.5"/></symbol>
+  <symbol id="i-log" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4" fill="currentColor" fill-opacity=".18"/><path d="M10 8h7M10 12h7M10 16h7"/><circle cx="7" cy="8" r=".9" fill="currentColor"/><circle cx="7" cy="12" r=".9" fill="currentColor"/><circle cx="7" cy="16" r=".9" fill="currentColor"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" fill="currentColor" fill-opacity=".3"/></symbol>
+  <symbol id="i-private" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z" fill="currentColor" fill-opacity=".18"/><circle cx="12" cy="12" r="3" fill="currentColor" fill-opacity=".35"/><path d="M3 3l18 18"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2.5 2.5 9.5l7.5 3.5 3.5 7.5 8-18Z" fill="currentColor" fill-opacity=".25"/><path d="M21.5 2.5 10 13"/></symbol>
+  <symbol id="i-megaphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4a1 1 0 0 0 1 1h3l8 5V4L7 9H4a1 1 0 0 0-1 1Z" fill="currentColor" fill-opacity=".25"/><path d="M18.5 9a4 4 0 0 1 0 6M7 15l1.5 5H11l-1-5"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" fill="currentColor" fill-opacity=".15"/><circle cx="12" cy="12" r="5" fill="currentColor" fill-opacity=".25"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z" fill="currentColor" fill-opacity=".22"/><path d="M8.5 11h7M8.5 14h4"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3" fill="currentColor" fill-opacity=".18"/><path d="M3 10h18V8a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v2Z" fill="currentColor" fill-opacity=".35"/><path d="M8 3v4M16 3v4M9 15l2 2 4-4"/></symbol>
+</svg>
+<a class="skip" href="#main">Bỏ qua, đến nội dung chính</a>
+<nav class="nav" aria-label="Điều hướng chính"><div class="nav-inner">
+  <a href="/vi/" aria-label="Trang chủ KAI"><svg class="nav-logo" viewBox="0 0 324 172" role="img" aria-label="KAI logo"><path d="M 292.25,12.25 L 292.00,12.50 L 292.00,160.25 L 292.50,160.75 L 312.25,160.75 L 312.75,160.50 L 312.75,12.50 L 312.50,12.25 Z M 276.00,160.50 L 208.25,12.50 L 191.25,12.75 L 129.50,146.25 L 72.25,80.25 L 137.14,12.00 L 111.25,12.25 L 33.50,91.75 L 32.25,90.25 L 32.50,13.25 L 31.75,12.25 L 12.00,12.50 L 12.25,160.75 L 32.25,160.50 L 32.50,121.50 L 57.25,96.00 L 59.75,97.50 L 114.25,160.25 L 145.25,160.75 L 200.00,42.75 L 254.50,160.75 Z" fill="currentColor" fill-rule="evenodd"/></svg></a>
+  <div class="nav-links" id="site-menu">
+    <div class="nav-item">
+      <a href="/vi/ai-workflows/" data-nav="ai">AI Workflows <svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+      <div class="nav-drop"><div class="nav-drop-inner">
+        <a href="/vi/ai-workflows/" data-sub="hub"><strong>Tổng quan</strong><span>Cách KAI xây dựng AI workflow an toàn</span></a>
+        <div class="drop-sep" role="presentation"></div>
+        <a href="/vi/ai-workflows/sales-outreach" data-sub="sales"><strong>Tiếp cận khách hàng</strong><span>AI tìm hiểu lead và soạn nội dung tiếp cận</span></a>
+        <a href="/vi/ai-workflows/lead-nurturing" data-sub="nurturing"><strong>Nuôi dưỡng khách tiềm năng</strong><span>Giữ liên lạc với khách chưa sẵn sàng mua</span></a>
+        <a href="/vi/ai-workflows/knowledge-assistant" data-sub="knowledge"><strong>Trợ lý tri thức</strong><span>Trả lời từ tài liệu của bạn, kèm nguồn</span></a>
+        <a href="/vi/ai-workflows/employee-onboarding" data-sub="onboarding"><strong>Hội nhập nhân sự mới</strong><span>Ai cũng biết việc cần làm ngay từ ngày đầu</span></a>
+        <a href="/vi/ai-workflows/documents-and-follow-ups" data-sub="documents"><strong>Chứng từ &amp; theo dõi công việc</strong><span>Bớt nhập tay, bớt chuyển tay</span></a>
+      </div></div>
+    </div>
+    <a href="/vi/zero-trust-security-foundation" data-nav="zt" class="active" aria-current="page">Bảo mật Zero Trust</a>
+    <a href="/vi/case-studies" data-nav="cases">Case study</a>
+    <a href="/vi/resources" data-nav="resources">Tài nguyên</a>
+    <a href="/vi/about" data-nav="about">Về KAI</a>
+  </div>
+  <div class="nav-right">
+    <div class="lang-switch" role="group" aria-label="Ngôn ngữ"><a href="/zero-trust-security-foundation" lang="en" hreflang="en">EN</a><a href="/vi/zero-trust-security-foundation" lang="vi" hreflang="vi" aria-current="true">VI</a></div>
+    <a href="mailto:C4L@kai.services" class="nav-cta">Liên hệ</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Mở menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</div></nav>
+
+<main id="main">
+<header class="hero zt-hero">
+  <div class="hero-grid zt-hero-grid">
+    <div>
+      <span class="eyebrow">KAI Zero Trust Baseline Policies</span>
+      <h1>Bộ chính sách Zero Trust nền tảng cho <span class="accent">Microsoft 365.</span></h1>
+      <p class="hero-sub" style="max-width:35ch">Quy tắc bảo mật rõ ràng cho công việc hằng ngày an toàn hơn, theo cách tiếp cận Zero Trust.</p>
+    </div>
+    <div>
+      <p class="hero-lead">KAI Zero Trust Baseline Policies tập hợp những chính sách bảo mật thiết yếu để thiết lập một baseline Zero Trust. Bộ tài liệu gồm các chính sách do hệ thống thực thi và các thực hành do con người thực hiện, được sắp xếp theo các thành phần của kiến trúc Zero Trust.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#next-step">Nhận bộ chính sách miễn phí <span aria-hidden="true">↓</span></a>
+        <a class="btn btn-ghost" href="#map">Xem các chính sách liên kết thế nào</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="map" class="zt-map-section" aria-labelledby="ztm-title">
+  <div class="zt-card">
+    <div class="zt-card-head">
+      <h2 id="ztm-title">Kiến trúc Zero Trust của KAI: Baseline</h2>
+      <div class="zt-legend">
+        <span><b class="po">PO</b>Chính sách, do hệ thống thực thi</span>
+        <span><b class="pr">PR</b>Thực hành, do con người thực hiện</span>
+        <span><i class="zt-oos-key" aria-hidden="true"></i>Ngoài phạm vi baseline</span>
+        <span class="zt-legend-hint">Bấm vào một thành phần để xem chi tiết ↓</span>
+      </div>
+    </div>
+    <div class="zt-demo">
+      <button type="button" class="btn btn-primary zt-play" id="zt-play">▶ Xem kịch bản thực tế: một lần đăng nhập</button>
+      <div class="zt-caption" aria-live="polite">
+        <strong id="zt-step-title">Kịch bản: một lần đăng nhập, qua từng chính sách</strong>
+        <span id="zt-step-desc">Bấm play để xem một lần đăng nhập đi qua những chính sách nào, lần lượt từng bước. Bấm vào bất kỳ thành phần nào để đọc các chính sách của nó.</span>
+      </div>
+    </div>
+<div class="ztm-wrap"><div class="ztm"><svg class="ztm-lines" viewBox="0 0 1536 906" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="ztm-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z"/></marker></defs><g data-line="auth"><polyline points="400,132 410,132"/><polyline points="470,154 470,286 552,286" marker-end="url(#ztm-arrow)"/></g><g data-line="dev"><polyline points="400,436 410,436"/><polyline points="530,436 552,436" marker-end="url(#ztm-arrow)"/></g><g data-line="gov"><polyline points="756,216 756,252" marker-end="url(#ztm-arrow)"/></g><g data-line="risk"><polyline points="756,550 756,506" marker-end="url(#ztm-arrow)"/></g><g data-line="out"><polyline points="956,379 968,379" marker-end="url(#ztm-arrow)"/><polyline points="1070,379 1082,379"/><polyline points="1082,122 1082,782"/><polyline points="1082,122 1156,122" marker-end="url(#ztm-arrow)"/><polyline points="1082,378 1156,378" marker-end="url(#ztm-arrow)"/><polyline points="1082,562 1156,562" marker-end="url(#ztm-arrow)"/></g></svg><button type="button" class="ztm-box ztm-ident" data-key="ident" style="--x:0;--y:0;--w:400;--h:264" aria-pressed="false"><span class="ztm-num" aria-hidden="true">1</span><span class="ztm-head"><strong class="ztm-name">Danh tính</strong><span class="ztm-sub">Tài khoản người dùng, dịch vụ và agent</span><span class="ztm-out">Xác nhận ai đang yêu cầu truy cập và luôn cập nhật quyền tài khoản.</span></span><span class="ztm-items"><span class="ztm-item"><b class="po">PO1</b><span>MFA chống lừa đảo cho quản trị viên</span></span><span class="ztm-item"><b class="po">PO2</b><span>Tài khoản khẩn cấp: chỉ dùng khóa bảo mật</span></span><span class="ztm-item"><b class="po">PO3</b><span>MFA mạnh cho mọi người dùng</span></span><span class="ztm-item"><b class="po">PO4</b><span>MFA cho khách bên ngoài</span></span><span class="ztm-item"><b class="po">PO5</b><span>Đăng ký MFA và thiết bị an toàn</span></span><span class="ztm-item"><b class="po">PO6</b><span>Giới hạn người được mời khách</span></span><span class="ztm-item"><b class="pr">PR1</b><span>Rà soát và thu hồi quyền quản trị</span></span><span class="ztm-item"><b class="pr">PR2</b><span>Quy trình vào làm, đổi vị trí, nghỉ việc</span></span></span></button><span class="ztm-via" style="--x:410;--y:110;--w:120;--h:44" aria-hidden="true">Xác thực<br>mạnh</span><button type="button" class="ztm-box ztm-endp" data-key="endp" style="--x:0;--y:304;--w:400;--h:264" aria-pressed="false"><span class="ztm-num" aria-hidden="true">2</span><span class="ztm-head"><strong class="ztm-name">Thiết bị</strong><span class="ztm-sub">Thiết bị công ty, cá nhân và bên ngoài</span><span class="ztm-out">Kiểm tra thiết bị có đủ an toàn để truy cập thông tin công việc hay không.</span></span><span class="ztm-items"><span class="ztm-item"><b class="po">PO12</b><span>Chặn nền tảng không được hỗ trợ</span></span><span class="ztm-item"><b class="po">PO13</b><span>Yêu cầu máy tính đạt chuẩn an toàn</span></span><span class="ztm-item"><b class="po">PO14</b><span>Di động: chỉ dùng ứng dụng được duyệt</span></span><span class="ztm-item"><b class="po">PO15</b><span>Bật Defender for Business trên thiết bị</span></span><span class="ztm-item"><b class="po">PO16</b><span>Mã hóa ổ đĩa</span></span><span class="ztm-item"><b class="po">PO17</b><span>Tự động cập nhật</span></span><span class="ztm-item"><b class="po">PO18</b><span>Tự động đổi mật khẩu admin cục bộ</span></span></span></button><span class="ztm-via" style="--x:410;--y:414;--w:120;--h:44" aria-hidden="true">Thiết bị<br>đạt chuẩn</span><button type="button" class="ztm-box ztm-gov" data-key="gov" style="--x:556;--y:0;--w:400;--h:216" aria-pressed="false"><span class="ztm-num" aria-hidden="true">3</span><span class="ztm-head"><strong class="ztm-name">Quản trị &amp; tuân thủ cấu hình</strong><span class="ztm-sub">Người phụ trách, rà soát định kỳ, tinh chỉnh liên tục</span><span class="ztm-out">Mỗi quy tắc có người phụ trách và luôn hữu ích khi doanh nghiệp thay đổi.</span></span><span class="ztm-items"><span class="ztm-item"><b class="pr">PR6</b><span>Người phụ trách chính sách &amp; sổ ngoại lệ</span></span><span class="ztm-item"><b class="pr">PR7</b><span>Kiểm tra Secure Score hằng tháng</span></span><span class="ztm-item"><b class="pr">PR8</b><span>Rà soát baseline mỗi quý</span></span></span></button><button type="button" class="ztm-box ztm-eng" data-key="eng" style="--x:556;--y:256;--w:400;--h:246" aria-pressed="true"><span class="ztm-num" aria-hidden="true">3</span><span class="ztm-head"><strong class="ztm-name">Kiểm soát truy cập · Policy Engine</strong><span class="ztm-sub">Mọi lần đăng nhập đều được đánh giá và áp dụng quy tắc theo thời gian thực</span><span class="ztm-out">Quyết định khi nào cho phép, giới hạn hay chặn truy cập.</span></span><span class="ztm-items"><span class="ztm-item"><b class="po">PO7</b><span>Chặn phương thức xác thực cũ</span></span><span class="ztm-item"><b class="po">PO8</b><span>Chặn đăng nhập bằng mã thiết bị</span></span><span class="ztm-item"><b class="po">PO9</b><span>Chặn chuyển phiên đăng nhập sang thiết bị khác</span></span><span class="ztm-item"><b class="po">PO10</b><span>Giới hạn thời gian phiên đăng nhập</span></span><span class="ztm-item"><b class="po">PO11</b><span>Không duy trì đăng nhập sau khi đóng trình duyệt</span></span></span></button><span class="ztm-via" style="--x:686;--y:512;--w:140;--h:28" aria-hidden="true">Đánh giá rủi ro</span><button type="button" class="ztm-box ztm-threat" data-key="threat" style="--x:556;--y:550;--w:400;--h:188" aria-pressed="false"><span class="ztm-num" aria-hidden="true">3</span><span class="ztm-head"><strong class="ztm-name">Bảo vệ trước mối đe dọa</strong><span class="ztm-sub">Email, đường link, tệp đính kèm, giả mạo tên miền</span><span class="ztm-out">Giúp ngăn tin nhắn độc hại và người gửi giả mạo đến tay đội ngũ.</span></span><span class="ztm-items"><span class="ztm-item"><b class="po">PO19</b><span>Bảo vệ email và Teams trước mối đe dọa</span></span><span class="ztm-item"><b class="po">PO20</b><span>Chống giả mạo email (SPF, DKIM, DMARC)</span></span></span></button><span class="ztm-mini" style="--x:1086;--y:78;--w:70;--h:30" aria-hidden="true">Phân loại, gắn nhãn</span><span class="ztm-mini" style="--x:1086;--y:334;--w:70;--h:30" aria-hidden="true">Kiểm soát app &amp; AI</span><span class="ztm-mini" style="--x:1086;--y:518;--w:70;--h:30" aria-hidden="true">Quản lý cấu hình cloud</span><button type="button" class="ztm-box ztm-data" data-key="data" style="--x:1160;--y:0;--w:376;--h:244" aria-pressed="false"><span class="ztm-num" aria-hidden="true">4</span><span class="ztm-head"><strong class="ztm-name">Dữ liệu</strong><span class="ztm-sub">Email, tài liệu, dữ liệu có cấu trúc</span><span class="ztm-out">Giúp mọi người chia sẻ thông tin công việc đúng người.</span></span><span class="ztm-items"><span class="ztm-item"><b class="pr">PR4</b><span>Xác định các loại dữ liệu nhạy cảm</span></span><span class="ztm-item"><b class="po">PO22</b><span>Mặc định chia sẻ an toàn</span></span><span class="ztm-item"><b class="po">PO23</b><span>Nhãn mức độ nhạy cảm</span></span><span class="ztm-item"><b class="po">PO24</b><span>Ngăn rò rỉ dữ liệu (DLP)</span></span><span class="ztm-item"><b class="po">PO25</b><span>Chặn tự động chuyển tiếp email ra ngoài</span></span></span></button><button type="button" class="ztm-box ztm-apps" data-key="apps" style="--x:1160;--y:284;--w:376;--h:188" aria-pressed="false"><span class="ztm-num" aria-hidden="true">4</span><span class="ztm-head"><strong class="ztm-name">Ứng dụng &amp; AI</strong><span class="ztm-sub">Ứng dụng cloud, ứng dụng AI, agent, MCP server</span><span class="ztm-out">Biết những ứng dụng và công cụ AI nào được dùng thông tin doanh nghiệp.</span></span><span class="ztm-items"><span class="ztm-item"><b class="po">PO21</b><span>Duyệt ứng dụng và AI agent trước khi dùng</span></span><span class="ztm-item"><b class="pr">PR3</b><span>Danh mục ứng dụng và AI agent</span></span></span></button><button type="button" class="ztm-box ztm-tele" data-key="tele" style="--x:0;--y:782;--w:1536;--h:124" aria-pressed="false"><span class="ztm-num" aria-hidden="true">5</span><span class="ztm-head"><strong class="ztm-name">Ghi nhận · Phân tích · Tự động hóa</strong><span class="ztm-sub">Nhật ký đăng nhập và hoạt động, cảnh báo, và người xử lý</span><span class="ztm-out">Biết điều gì đã xảy ra và đảm bảo có người theo dõi xử lý.</span></span><span class="ztm-items"><span class="ztm-item"><b class="po">PO26</b><span>Bật ghi nhật ký hoạt động</span></span><span class="ztm-item"><b class="po">PO27</b><span>Lưu nhật ký đăng nhập 90 ngày</span></span><span class="ztm-item"><b class="po">PO28</b><span>Cảnh báo sự kiện ảnh hưởng lớn</span></span><span class="ztm-item"><b class="pr">PR5</b><span>Người phụ trách cảnh báo &amp; danh sách xử lý</span></span></span></button><div class="ztm-oos" style="--x:970;--y:309;--w:100;--h:140"><strong>Mạng</strong><span>Lọc truy cập, tại chỗ</span><em>Ngoài phạm vi baseline.</em></div><div class="ztm-oos" style="--x:1160;--y:512;--w:376;--h:100"><strong>Hạ tầng</strong><span>Máy chủ, container, nền tảng cloud</span><em>Ngoài phạm vi baseline.</em></div></div></div>
+    <div class="ztd" id="zt-detail"><div class="ztd-left"><span class="eyebrow">Xem kỹ hơn</span><h3>Kiểm soát truy cập · Policy Engine</h3><p class="ztd-meta">Mọi lần đăng nhập đều được đánh giá và áp dụng quy tắc theo thời gian thực · 5 PO · 0 PR</p><p class="ztd-check">Những quy tắc đăng nhập nào phù hợp với đội ngũ? Hãy kiểm tra các tính năng Microsoft bạn đang có và thử quyền truy cập khẩn cấp trước khi thay đổi.</p><label class="ztd-label" for="ztd-status">Phần này cần lưu ý gì?</label><select id="ztd-status" class="ztd-status"><option value="">Chọn trạng thái</option><option value="check">Cần kiểm tra</option><option value="progress">Đang thực hiện</option><option value="reviewed">Đã kiểm tra cùng đội IT</option></select><small class="ztd-note">Đây là ghi chú của riêng bạn. Ghi chú được lưu trên trình duyệt này và không gửi cho KAI.</small></div><ul class="ztd-list"><li><b class="po">PO7</b><span>Chặn phương thức xác thực cũ</span></li><li><b class="po">PO8</b><span>Chặn đăng nhập bằng mã thiết bị</span></li><li><b class="po">PO9</b><span>Chặn chuyển phiên đăng nhập sang thiết bị khác</span></li><li><b class="po">PO10</b><span>Giới hạn thời gian phiên đăng nhập</span></li><li><b class="po">PO11</b><span>Không duy trì đăng nhập sau khi đóng trình duyệt</span></li></ul></div>
+    <p class="ztd-progress" id="zt-progress">Bạn đã đánh dấu 0/8 nhóm · Đây là ghi chú của bạn, không phải kết quả kiểm tra hệ thống.</p>
+  </div>
+</section>
+
+<section id="approach">
+  <div class="wrap zt-approach">
+    <div>
+      <span class="eyebrow">Cách làm của KAI</span>
+      <h2>Thống nhất quy tắc.<br>Thiết lập. Đưa vào công việc.</h2>
+      <p class="intro">Bảo mật tốt cần chính sách rõ ràng, cài đặt hệ thống đúng và con người biết mình cần làm gì. KAI kết hợp cả ba.</p>
+    </div>
+    <div class="zt-steps">
+      <article class="zt-step"><span class="zt-step-n">01</span><div><span class="zt-step-k">Xác định</span><h3>Xác định chính sách</h3><p>Thống nhất quy tắc cho việc đăng nhập, dùng thiết bị, chia sẻ tệp và làm việc với AI. Điều chỉnh cho phù hợp với doanh nghiệp và cách đội ngũ làm việc.</p></div></article>
+      <article class="zt-step"><span class="zt-step-n">02</span><div><span class="zt-step-k">Triển khai</span><h3>Thiết lập chính sách trong hệ thống</h3><p>Biến các chính sách đã thống nhất thành cài đặt trong Microsoft 365. Kiểm thử thay đổi, rồi áp dụng từng bước.</p></div></article>
+      <article class="zt-step"><span class="zt-step-n">03</span><div><span class="zt-step-k">Áp dụng</span><h3>Đưa chính sách vào thực tế</h3><p>Giúp đội ngũ hiểu điều gì thay đổi, cần làm gì và hỏi ai khi cần. Chỉ định người duy trì từng chính sách.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="next-step" style="padding-top:0">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:40px">
+      <span class="eyebrow">Bước tiếp theo của bạn</span>
+      <h2>Tự làm, hoặc làm cùng chúng tôi.</h2>
+      <p class="intro">Nhận bộ chính sách miễn phí và cùng đội IT rà soát, hoặc nhờ KAI giúp đưa các chính sách vào công việc hằng ngày.</p>
+    </div>
+    <div class="zt-choices">
+      <article class="zt-choice">
+        <span class="zt-tag">Bộ chính sách miễn phí</span>
+        <h3>Tự làm</h3>
+        <p class="zt-choice-lead">Điểm khởi đầu cho bạn và người phụ trách IT.</p>
+        <ul class="ticks">
+          <li>Bản đồ cho thấy các chính sách liên kết với nhau thế nào</li>
+          <li>28 quy tắc bảo mật và 8 thực hành cho đội ngũ</li>
+          <li>Câu hỏi cần kiểm tra trước khi thay đổi</li>
+          <li>Ghi chú của bạn khi rà soát bản đồ</li>
+        </ul>
+        <div class="zt-choice-foot">
+          <button type="button" class="zt-download" id="zt-download">Tải bộ chính sách miễn phí <span aria-hidden="true">↓</span></button>
+          <p class="zt-status" id="zt-download-status" role="status"></p>
+          <p class="zt-micro">Không cần email. Mở tệp HTML khi không có mạng hoặc in ra PDF. Bộ tài liệu liệt kê các chính sách và những điều cần kiểm tra; không gồm hướng dẫn cấu hình chi tiết.</p>
+        </div>
+      </article>
+      <article class="zt-choice dark">
+        <span class="zt-tag">KAI Zero Trust Security Foundation</span>
+        <h3>Làm cùng chúng tôi</h3>
+        <p class="zt-choice-lead">Cùng KAI xây dựng quy tắc bảo mật phù hợp với doanh nghiệp và giúp đội ngũ tuân thủ.</p>
+        <ul class="ticks">
+          <li>Rà soát những gì bạn đang có và những gì cần chú ý</li>
+          <li>Xác định chính sách phù hợp với cách bạn làm việc</li>
+          <li>Thiết lập trong Microsoft 365 và kiểm thử thay đổi</li>
+          <li>Giúp đội ngũ hiểu và áp dụng quy tắc mới</li>
+          <li>Bàn giao chính sách, hồ sơ thiết lập và hướng dẫn</li>
+        </ul>
+        <div class="zt-choice-foot">
+          <a class="btn btn-primary zt-full" href="mailto:C4L@kai.services?subject=Trao%20doi%20ve%20bao%20mat%20voi%20KAI&amp;body=Chao%20KAI%2C%0A%0AToi%20muon%20trao%20doi%20ve%20dich%20vu%20bao%20mat%20va%20sap%20xep%20mot%20cuoc%20goi.%0A%0ACong%20ty%3A%0ASo%20nhan%20su%3A%0ANoi%20dung%20can%20ho%20tro%3A%0A">Liên hệ để sắp xếp cuộc gọi <span aria-hidden="true">↗</span></a>
+          <p class="zt-micro">Hãy cho chúng tôi biết bạn cần hỗ trợ gì. Chúng tôi thống nhất phạm vi công việc và chi phí trước khi bắt đầu.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="tint">
+  <div class="wrap zt-faq">
+    <div>
+      <span class="eyebrow">Vài điều bạn có thể muốn biết</span>
+      <h2>Trước khi bắt đầu.</h2>
+      <p class="intro" style="margin-top:14px">Bạn cũng đang dùng AI? Xem cách KAI áp dụng cùng các quy tắc Zero Trust cho <a class="text-link" href="/vi/ai-workflows/">AI agent và workflow</a>.</p>
+    </div>
+    <div class="faq" style="margin:0;max-width:none">
+      <details><summary>Bộ tài liệu có phù hợp với doanh nghiệp như chúng tôi không? <span class="pm">+</span></summary><p>Bộ tài liệu được thiết kế cho doanh nghiệp khoảng 20–200 người dùng Microsoft 365. Bạn có thể xem cùng chủ doanh nghiệp, trưởng bộ phận vận hành hoặc người phụ trách IT.</p></details>
+      <details><summary>Chúng tôi có cần mua thêm gói Microsoft không? <span class="pm">+</span></summary><p>Một số chính sách có thể dùng tính năng bạn đã trả tiền. Một số khác có thể cần gói khác hoặc tính năng bổ sung. KAI kiểm tra những gì bạn đang có trước khi đề xuất thay đổi.</p></details>
+      <details><summary>Các thay đổi có làm đội ngũ khó làm việc hơn không? <span class="pm">+</span></summary><p>Một số quy tắc thay đổi cách mọi người đăng nhập, dùng thiết bị hoặc chia sẻ tệp. Chúng tôi kiểm thử thay đổi, triển khai từng bước và giúp đội ngũ hiểu cần làm gì.</p></details>
+      <details><summary>Có thể dùng bộ chính sách miễn phí mà không thuê KAI không? <span class="pm">+</span></summary><p>Có. Hãy xem các chính sách cùng đội IT hoặc đối tác IT và quyết định điều gì phù hợp với doanh nghiệp. Bộ tài liệu cho bạn danh sách chính sách và câu hỏi cần kiểm tra. Bạn vẫn cần người có thể thiết lập và kiểm thử thay đổi một cách an toàn.</p></details>
+      <details><summary>Đánh dấu trên bản đồ có xác nhận chúng tôi đã an toàn không? <span class="pm">+</span></summary><p>Không. Các đánh dấu là ghi chú của riêng bạn về những gì cần kiểm tra. Chúng không kiểm tra hệ thống của bạn. Ghi chú được lưu trên trình duyệt này và có thể đưa vào bản tải về.</p></details>
+      <details><summary>Làm việc với KAI, chúng tôi nhận được gì? <span class="pm">+</span></summary><p>Bạn nhận các chính sách đã thống nhất cho doanh nghiệp, hồ sơ thiết lập và kiểm thử, hướng dẫn cho đội ngũ và đề xuất bước tiếp theo. Tất cả được tập hợp trong KAI Zero Trust Security Pack.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2>Sẵn sàng làm cho bảo mật rõ ràng hơn?</h2>
+        <p>Bắt đầu với bộ chính sách miễn phí, hoặc trao đổi với KAI để được hỗ trợ.</p>
+      </div>
+      <a class="btn btn-primary" href="#next-step">Chọn bước tiếp theo <span aria-hidden="true">↑</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <svg class="footer-logo" viewBox="0 0 324 172" role="img" aria-label="KAI logo"><path d="M 292.25,12.25 L 292.00,12.50 L 292.00,160.25 L 292.50,160.75 L 312.25,160.75 L 312.75,160.50 L 312.75,12.50 L 312.50,12.25 Z M 276.00,160.50 L 208.25,12.50 L 191.25,12.75 L 129.50,146.25 L 72.25,80.25 L 137.14,12.00 L 111.25,12.25 L 33.50,91.75 L 32.25,90.25 L 32.50,13.25 L 31.75,12.25 L 12.00,12.50 L 12.25,160.75 L 32.25,160.50 L 32.50,121.50 L 57.25,96.00 L 59.75,97.50 L 114.25,160.25 L 145.25,160.75 L 200.00,42.75 L 254.50,160.75 Z" fill="currentColor" fill-rule="evenodd"/></svg>
+      <div class="footer-slogan">Inspired. Trusted. Empowered.</div>
+      <p class="footer-about">AI agent với bảo mật Zero Trust cho doanh nghiệp đang phát triển tại Đông Nam Á.</p>
+      <div class="footer-socials">
+        <a href="mailto:C4L@kai.services" aria-label="Email" title="C4L@kai.services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 8.5 6.2a2.6 2.6 0 0 0 3 0L22 6"/></svg></a>
+        <a href="https://www.linkedin.com/company/kai-services/" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.8-1.95 3.7-1.95 3.96 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg></a>
+        <a href="https://www.facebook.com/kaisvc" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2.4V2.1L14.1 2C10.8 2 10 4.5 10 6.1v2.4H7.6V12H10v10h4V12h3l.4-3.5H14z"/></svg></a>
+        <a href="https://www.instagram.com/kai_svc/" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.youtube.com/@Kaisvc" aria-label="YouTube" title="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.3-.4-4.9c-.2-.9-.9-1.5-1.7-1.8C19.3 5 12 5 12 5s-7.3 0-8.9.4c-.8.2-1.5.9-1.7 1.8C1 8.7 1 12 1 12s0 3.3.4 4.9c.2.9.9 1.5 1.7 1.8C4.7 19 12 19 12 19s7.3 0 8.9-.4c.8-.2 1.5-.9 1.7-1.8.4-1.6.4-4.9.4-4.9zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg></a>
+        <a href="https://www.tiktok.com/@kai_svc2015" aria-label="TikTok" title="TikTok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.1 3c.3 2 1.6 3.6 3.6 3.9v2.6c-1.3.1-2.6-.3-3.6-1.1v5.7c0 3-2.4 5.4-5.4 5.4S5.3 19.1 5.3 16.1s2.4-5.4 5.4-5.4c.3 0 .6 0 .9.1v2.7c-.3-.1-.6-.2-.9-.2-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7 2.7-1.2 2.7-2.7V3h2.4z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h2>AI Workflows</h2>
+        <ul>
+          <li><a href="/vi/ai-workflows/">Tổng quan</a></li>
+          <li><a href="/vi/ai-workflows/sales-outreach">Tiếp cận khách hàng</a></li>
+          <li><a href="/vi/ai-workflows/lead-nurturing">Nuôi dưỡng khách tiềm năng</a></li>
+          <li><a href="/vi/ai-workflows/knowledge-assistant">Trợ lý tri thức</a></li>
+          <li><a href="/vi/ai-workflows/employee-onboarding">Hội nhập nhân sự mới</a></li>
+          <li><a href="/vi/ai-workflows/documents-and-follow-ups">Chứng từ &amp; theo dõi công việc</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Bảo mật</h2>
+        <ul>
+          <li><a href="/vi/zero-trust-security-foundation">Zero Trust Baseline</a></li>
+          <li><a href="/vi/zero-trust-security-foundation#next-step">Bộ chính sách miễn phí</a></li>
+          <li><a href="/vi/glossary">Thuật ngữ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Công ty</h2>
+        <ul>
+          <li><a href="/vi/case-studies">Case study</a></li>
+          <li><a href="/vi/resources">Tài nguyên</a></li>
+          <li><a href="/vi/about">Về KAI</a></li>
+          <li><a href="mailto:C4L@kai.services">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 KAI. Bảo lưu mọi quyền.</span><span>kai.services</span></div>
+</footer>
+<script src="/assets/kai.js" defer></script>
+<script type="application/json" id="zt-data">{"components":[{"key":"ident","box":[0,0,400,264],"name":"Danh tính","sub":"Tài khoản người dùng, dịch vụ và agent","outcome":"Xác nhận ai đang yêu cầu truy cập và luôn cập nhật quyền tài khoản.","check":"Ai được đăng nhập? Ai có quyền quản trị? Bạn thu hồi quyền thế nào khi có người nghỉ việc? Hãy đảm bảo bạn lấy lại được quyền truy cập trong tình huống khẩn cấp. Tài khoản dùng cho ứng dụng cần kiểm tra khác với tài khoản của người.","items":[{"id":"PO1","name":"MFA chống lừa đảo cho quản trị viên"},{"id":"PO2","name":"Tài khoản khẩn cấp: chỉ dùng khóa bảo mật"},{"id":"PO3","name":"MFA mạnh cho mọi người dùng"},{"id":"PO4","name":"MFA cho khách bên ngoài"},{"id":"PO5","name":"Đăng ký MFA và thiết bị an toàn"},{"id":"PO6","name":"Giới hạn người được mời khách"},{"id":"PR1","name":"Rà soát và thu hồi quyền quản trị"},{"id":"PR2","name":"Quy trình vào làm, đổi vị trí, nghỉ việc"}],"kit":{"name":"Con người & tài khoản","sub":"Nhân viên, khách bên ngoài và tài khoản dùng cho ứng dụng","items":[{"id":"PO1","name":"MFA chống lừa đảo cho quản trị viên"},{"id":"PO2","name":"Tài khoản khẩn cấp: chỉ dùng khóa bảo mật"},{"id":"PO3","name":"MFA mạnh cho mọi người dùng"},{"id":"PO4","name":"MFA cho khách bên ngoài"},{"id":"PO5","name":"Đăng ký MFA và thiết bị an toàn"},{"id":"PO6","name":"Giới hạn người được mời khách"},{"id":"PR1","name":"Rà soát và thu hồi quyền quản trị"},{"id":"PR2","name":"Quy trình vào làm, đổi vị trí, nghỉ việc"}]}},{"key":"endp","box":[0,304,400,264],"name":"Thiết bị","sub":"Thiết bị công ty, cá nhân và bên ngoài","outcome":"Kiểm tra thiết bị có đủ an toàn để truy cập thông tin công việc hay không.","check":"Những thiết bị nào được dùng cho công việc? Ai kiểm tra việc cập nhật và bảo vệ? Điều gì xảy ra nếu mất thiết bị?","items":[{"id":"PO12","name":"Chặn nền tảng không được hỗ trợ"},{"id":"PO13","name":"Yêu cầu máy tính đạt chuẩn an toàn"},{"id":"PO14","name":"Di động: chỉ dùng ứng dụng được duyệt"},{"id":"PO15","name":"Bật Defender for Business trên thiết bị"},{"id":"PO16","name":"Mã hóa ổ đĩa"},{"id":"PO17","name":"Tự động cập nhật"},{"id":"PO18","name":"Tự động đổi mật khẩu admin cục bộ"}],"kit":{"name":"Thiết bị","sub":"Máy tính công ty, laptop cá nhân và điện thoại","items":[{"id":"PO12","name":"Chặn nền tảng không được hỗ trợ"},{"id":"PO13","name":"Yêu cầu máy tính đạt chuẩn an toàn"},{"id":"PO14","name":"Di động: chỉ dùng ứng dụng được duyệt"},{"id":"PO15","name":"Bật Defender for Business trên thiết bị"},{"id":"PO16","name":"Mã hóa ổ đĩa"},{"id":"PO17","name":"Tự động cập nhật"},{"id":"PO18","name":"Tự động đổi mật khẩu admin cục bộ"}]}},{"key":"eng","box":[556,256,400,246],"name":"Kiểm soát truy cập · Policy Engine","sub":"Mọi lần đăng nhập đều được đánh giá và áp dụng quy tắc theo thời gian thực","outcome":"Quyết định khi nào cho phép, giới hạn hay chặn truy cập.","check":"Những quy tắc đăng nhập nào phù hợp với đội ngũ? Hãy kiểm tra các tính năng Microsoft bạn đang có và thử quyền truy cập khẩn cấp trước khi thay đổi.","items":[{"id":"PO7","name":"Chặn phương thức xác thực cũ"},{"id":"PO8","name":"Chặn đăng nhập bằng mã thiết bị"},{"id":"PO9","name":"Chặn chuyển phiên đăng nhập sang thiết bị khác"},{"id":"PO10","name":"Giới hạn thời gian phiên đăng nhập"},{"id":"PO11","name":"Không duy trì đăng nhập sau khi đóng trình duyệt"}],"kit":{"name":"Quy tắc truy cập","sub":"Kiểm tra quyền truy cập mỗi khi có người đăng nhập","items":[{"id":"PO7","name":"Chặn phương thức xác thực cũ"},{"id":"PO8","name":"Chặn đăng nhập bằng mã thiết bị"},{"id":"PO9","name":"Chặn chuyển phiên đăng nhập sang thiết bị khác"},{"id":"PO10","name":"Giới hạn thời gian phiên đăng nhập"},{"id":"PO11","name":"Không duy trì đăng nhập sau khi đóng trình duyệt"}]}},{"key":"threat","box":[556,550,400,188],"name":"Bảo vệ trước mối đe dọa","sub":"Email, đường link, tệp đính kèm, giả mạo tên miền","outcome":"Giúp ngăn tin nhắn độc hại và người gửi giả mạo đến tay đội ngũ.","check":"Ai phụ trách bảo vệ email? Email từ doanh nghiệp của bạn có dễ xác minh không? Ai xử lý các tin nhắn đáng ngờ?","items":[{"id":"PO19","name":"Bảo vệ email và Teams trước mối đe dọa"},{"id":"PO20","name":"Chống giả mạo email (SPF, DKIM, DMARC)"}],"kit":{"name":"Bảo vệ email & tin nhắn","sub":"Tin nhắn, đường link, tệp đính kèm và người gửi giả mạo","items":[{"id":"PO19","name":"Bảo vệ email và Teams trước mối đe dọa"},{"id":"PO20","name":"Chống giả mạo email (SPF, DKIM, DMARC)"}]}},{"key":"data","box":[1160,0,376,244],"name":"Dữ liệu","sub":"Email, tài liệu, dữ liệu có cấu trúc","outcome":"Giúp mọi người chia sẻ thông tin công việc đúng người.","check":"Thông tin nào là nhạy cảm? Ai được chia sẻ ra bên ngoài? Hãy thống nhất các quy tắc này trước khi thay đổi cài đặt tệp.","items":[{"id":"PR4","name":"Xác định các loại dữ liệu nhạy cảm"},{"id":"PO22","name":"Mặc định chia sẻ an toàn"},{"id":"PO23","name":"Nhãn mức độ nhạy cảm"},{"id":"PO24","name":"Ngăn rò rỉ dữ liệu (DLP)"},{"id":"PO25","name":"Chặn tự động chuyển tiếp email ra ngoài"}],"kit":{"name":"Tệp & chia sẻ","sub":"Tài liệu, email và thông tin nhạy cảm","items":[{"id":"PR4","name":"Xác định các loại dữ liệu nhạy cảm"},{"id":"PO22","name":"Mặc định chia sẻ an toàn"},{"id":"PO23","name":"Nhãn mức độ nhạy cảm"},{"id":"PO24","name":"Ngăn rò rỉ dữ liệu (DLP)"},{"id":"PO25","name":"Chặn tự động chuyển tiếp email ra ngoài"}]}},{"key":"apps","box":[1160,284,376,188],"name":"Ứng dụng & AI","sub":"Ứng dụng cloud, ứng dụng AI, agent, MCP server","outcome":"Biết những ứng dụng và công cụ AI nào được dùng thông tin doanh nghiệp.","check":"Những ứng dụng và công cụ AI nào đang dùng thông tin doanh nghiệp? Ai phê duyệt? Chúng xem và thay đổi được gì? Mỗi công cụ có thể cần cài đặt khác nhau.","items":[{"id":"PO21","name":"Duyệt ứng dụng và AI agent trước khi dùng"},{"id":"PR3","name":"Danh mục ứng dụng và AI agent"}],"kit":{"name":"Ứng dụng & AI","sub":"Công cụ kết nối với thông tin doanh nghiệp","items":[{"id":"PO21","name":"Duyệt ứng dụng và AI agent trước khi dùng"},{"id":"PR3","name":"Danh mục ứng dụng và AI agent"}]}},{"key":"tele","box":[0,782,1536,124],"name":"Ghi nhận · Phân tích · Tự động hóa","sub":"Nhật ký đăng nhập và hoạt động, cảnh báo, và người xử lý","outcome":"Biết điều gì đã xảy ra và đảm bảo có người theo dõi xử lý.","check":"Bạn ghi nhận hoạt động nào và lưu trong bao lâu? Gói dịch vụ của bạn có hỗ trợ không? Ai nhận cảnh báo và xử lý?","items":[{"id":"PO26","name":"Bật ghi nhật ký hoạt động"},{"id":"PO27","name":"Lưu nhật ký đăng nhập 90 ngày"},{"id":"PO28","name":"Cảnh báo sự kiện ảnh hưởng lớn"},{"id":"PR5","name":"Người phụ trách cảnh báo & danh sách xử lý"}],"kit":{"name":"Hoạt động & cảnh báo","sub":"Ghi nhận điều đã xảy ra và người theo dõi xử lý","items":[{"id":"PO26","name":"Bật ghi nhật ký hoạt động"},{"id":"PO27","name":"Lưu nhật ký đăng nhập 90 ngày"},{"id":"PO28","name":"Cảnh báo sự kiện ảnh hưởng lớn"},{"id":"PR5","name":"Người phụ trách cảnh báo & danh sách xử lý"}]}},{"key":"gov","box":[556,0,400,216],"name":"Quản trị & tuân thủ cấu hình","sub":"Người phụ trách, rà soát định kỳ, tinh chỉnh liên tục","outcome":"Mỗi quy tắc có người phụ trách và luôn hữu ích khi doanh nghiệp thay đổi.","check":"Ai phụ trách từng chính sách? Ngoại lệ được thống nhất thế nào? Khi nào bạn kiểm tra lại các quy tắc còn phù hợp với doanh nghiệp?","items":[{"id":"PR6","name":"Người phụ trách chính sách & sổ ngoại lệ"},{"id":"PR7","name":"Kiểm tra Secure Score hằng tháng"},{"id":"PR8","name":"Rà soát baseline mỗi quý"}],"kit":{"name":"Người phụ trách & rà soát","sub":"Người quản lý các quy tắc và giữ chúng luôn cập nhật","items":[{"id":"PR6","name":"Người phụ trách chính sách & sổ ngoại lệ"},{"id":"PR7","name":"Kiểm tra Secure Score hằng tháng"},{"id":"PR8","name":"Rà soát baseline mỗi quý"}]}}],"steps":[{"c":["ident","endp","eng","threat","data","apps","tele","gov"],"l":["auth","dev","gov","risk","out"],"t":"Toàn bộ baseline","d":"28 chính sách và 8 thực hành trên tám thành phần. Bấm play để theo dõi một lần đăng nhập."},{"c":["ident"],"l":["auth"],"t":"Ai đang đăng nhập?","d":"Danh tính chứng minh mình là ai bằng MFA mạnh, chống lừa đảo."},{"c":["endp"],"l":["dev"],"t":"Thiết bị có an toàn không?","d":"Thiết bị chứng minh được quản lý, đã mã hóa và được cập nhật."},{"c":["eng","gov","threat"],"l":["gov","risk"],"t":"Policy engine quyết định","d":"Conditional Access cân nhắc tín hiệu về danh tính, thiết bị và rủi ro, theo các quy tắc có người phụ trách và rà soát."},{"c":["data","apps"],"l":["out"],"t":"Chỉ khi đó mới đến dữ liệu, ứng dụng và AI","d":"Quyền truy cập chỉ đến dữ liệu đã gắn nhãn, ứng dụng và AI agent đã được duyệt, không gì khác."},{"c":["tele"],"l":["out"],"t":"Mọi thứ đều được ghi nhận","d":"Đăng nhập và hoạt động được ghi lại, cảnh báo đến đúng người phụ trách."}]}</script>
+<script src="/assets/zt-map.js" defer></script>
+</body>
+</html>
