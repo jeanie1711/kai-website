@@ -111,13 +111,6 @@
   <url>
     <loc>https://kai.services/resources</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/resources"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/resources"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/resources"/>
-  </url>
-  <url>
-    <loc>https://kai.services/vi/resources</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kai.services/resources"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://kai.services/vi/resources"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kai.services/resources"/>
   </url>
   <url>
