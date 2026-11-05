@@ -6,3 +6,7 @@
 /ai-workflows/document-processing    /ai-workflows/documents-and-follow-ups   301
 /vi/ai-workflows/operations-follow-up   /vi/ai-workflows/documents-and-follow-ups   301
 /vi/ai-workflows/document-processing    /vi/ai-workflows/documents-and-follow-ups   301
+
+# Resources is hidden for now; send visitors to the free policy kit (temporary redirect)
+/resources      /zero-trust-security-foundation      302
+/vi/resources   /vi/zero-trust-security-foundation   302

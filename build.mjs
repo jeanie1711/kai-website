@@ -129,8 +129,8 @@ function ztParts(lang) {
   const num = (key) => z.steps.findIndex((s, i) => i > 0 && s.c.includes(key));
   const box = (c) => `<button type="button" class="ztm-box ztm-${c.key}" data-key="${c.key}" style="${pos(c.box)}" aria-pressed="${c.key === 'eng'}">` +
     `<span class="ztm-num" aria-hidden="true">${num(c.key)}</span>` +
-    // Vietnamese map boxes omit the subtitle line (by request); it still shows in the detail panel.
-    `<span class="ztm-head"><strong class="ztm-name">${esc(c.name)}</strong>${lang === 'vi' ? '' : `<span class="ztm-sub">${esc(c.sub)}</span>`}<span class="ztm-out">${esc(c.outcome)}</span></span>` +
+    // Map boxes omit the subtitle line (by request); it still shows in the detail panel.
+    `<span class="ztm-head"><strong class="ztm-name">${esc(c.name)}</strong><span class="ztm-out">${esc(c.outcome)}</span></span>` +
     `<span class="ztm-items">${c.items.map((i) => `<span class="ztm-item">${badge(i.id)}<span>${esc(i.name)}</span></span>`).join('')}</span></button>`;
   const via = (txt, b) => `<span class="ztm-via" style="${pos(b)}" aria-hidden="true">${txt}</span>`;
   const mini = (txt, b) => `<span class="ztm-mini" style="${pos(b)}" aria-hidden="true">${txt}</span>`;

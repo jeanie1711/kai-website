@@ -18,7 +18,6 @@
 ## Other pages
 
 - [Case Studies](https://kai.services/case-studies): Anonymised client projects, including how a financial solutions consultancy protected customer data across chat apps, personal devices and AI tools. Client names are never published.
-- [Resources](https://kai.services/resources): The free KAI Zero Trust Baseline Policies kit and the guided KAI Zero Trust Readiness Assessment.
 - [Glossary](https://kai.services/glossary): Plain-language definitions of AI and Zero Trust terms, such as AI agent, human-in-the-loop, least privilege, oversharing, ACM and KAI OS.
 - [About](https://kai.services/about): Why KAI exists, who it works with (growing businesses of roughly 20 to 200 people) and how it works.
 
