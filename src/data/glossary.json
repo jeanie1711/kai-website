@@ -26,7 +26,7 @@
         },
         "vi": {
           "name": "AI Workflows (KAI)",
-          "def": "KAI AI Workflows là dịch vụ của KAI đưa AI agent vào công việc hằng ngày cùng bảo mật Zero Trust. Các workflow gồm tiếp cận khách hàng, nuôi dưỡng khách tiềm năng, trợ lý tri thức, hội nhập nhân sự mới, và chứng từ & theo dõi công việc. Mỗi workflow được triển khai qua ba bước (Xác định, Triển khai, Áp dụng), và mọi agent đều làm việc với dữ liệu được duyệt, hành động được xác định và sự giám sát của con người.",
+          "def": "KAI AI Workflows là dịch vụ của KAI đưa AI agent vào công việc hằng ngày cùng bảo mật Zero Trust. Các workflow gồm tiếp cận khách hàng, nuôi dưỡng khách tiềm năng, trợ lý thông tin doanh nghiệp, onboarding nhân sự mới, và chứng từ & theo dõi công việc. Mỗi workflow được triển khai qua ba bước (Xác định, Triển khai, Áp dụng), và mọi agent đều làm việc với dữ liệu được duyệt, hành động được xác định và sự giám sát của con người.",
           "see": "Khám phá AI Workflows"
         }
       },
@@ -103,9 +103,9 @@
           "href": "/ai-workflows/knowledge-assistant"
         },
         "vi": {
-          "name": "Trợ lý tri thức (Knowledge Assistant)",
-          "def": "Trợ lý tri thức là một AI agent trả lời các câu hỏi hằng ngày của nhân viên, chỉ dựa trên tài liệu công ty đã được duyệt như chính sách, SOP và tài liệu bán hàng. Mỗi câu trả lời đều kèm nguồn và tuân theo quyền truy cập sẵn có của từng nhân viên. Câu hỏi nào trợ lý không trả lời chắc chắn được sẽ được chuyển cho người phụ trách tài liệu.",
-          "see": "Xem workflow Trợ lý tri thức"
+          "name": "Trợ lý thông tin doanh nghiệp (Knowledge Assistant)",
+          "def": "Trợ lý thông tin doanh nghiệp là một AI agent trả lời các câu hỏi hằng ngày của nhân viên, chỉ dựa trên tài liệu công ty đã được duyệt như chính sách, SOP và tài liệu bán hàng. Mỗi câu trả lời đều kèm nguồn và tuân theo quyền truy cập sẵn có của từng nhân viên. Câu hỏi nào trợ lý không trả lời chắc chắn được sẽ được chuyển cho người phụ trách tài liệu.",
+          "see": "Xem workflow Trợ lý thông tin doanh nghiệp"
         }
       },
       {
