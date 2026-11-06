@@ -729,3 +729,20 @@ b.pr{background:var(--hue-amber)}
 @media (max-width:900px){.voices-grid{grid-template-columns:1fr 1fr}.voices-foot{flex-direction:column;align-items:flex-start}}
 @media (max-width:620px){.voices{padding:36px 16px 60px}.voices-grid{grid-template-columns:1fr}.voices-feature{padding:56px 22px 24px}.voices-feature::before{left:18px;top:2px;font-size:84px}}
 @media (prefers-reduced-motion:reduce){.voices-grid blockquote{transition:none}}
+
+/* About: who we fit, as icon tiles */
+.fit-grid{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.fit-grid li{display:flex;align-items:center;gap:16px;padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-sm);font-size:15px;line-height:1.5;color:var(--ink);font-weight:500;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.fit-grid li:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--brand) 30%,var(--line));box-shadow:0 14px 30px color-mix(in srgb,var(--ink) 10%,transparent)}
+.fit-grid .card-ico{flex:none;width:46px;height:46px}
+@media (max-width:900px){.fit-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.fit-grid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.fit-grid li{transition:none}}
+
+/* About: closing line of the story, highlighted */
+.story p.story-closer{position:relative;margin:34px 0 0;padding:30px 34px 30px 38px;border-radius:18px;overflow:hidden;isolation:isolate;
+  font:700 clamp(21px,2.6vw,28px)/1.35 var(--font-head);letter-spacing:-.015em;color:#fff;text-wrap:balance;
+  background:radial-gradient(420px 200px at 100% 0%,color-mix(in srgb,var(--glow) 28%,transparent),transparent 70%),linear-gradient(135deg,var(--ink-deep),var(--ink) 60%,var(--brand));
+  box-shadow:0 22px 50px color-mix(in srgb,var(--ink) 28%,transparent)}
+.story-closer::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(var(--glow),var(--brand-2))}
+.story-closer .accent{white-space:nowrap;background:linear-gradient(100deg,var(--glow),var(--accent-light));-webkit-background-clip:text;background-clip:text;color:transparent}
