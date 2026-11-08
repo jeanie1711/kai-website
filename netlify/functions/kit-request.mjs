@@ -1,11 +1,8 @@
-// POST /api/kit-request  { email, lang, updates, website (honeypot) }
-// Checks the email and sends the visitor a one-time download link. See lib/kit-gate.js.
-import { handleKitRequest, resendMailer } from '../../lib/kit-gate.js';
+// POST /api/kit-request  { firstname, lastname, email, company, size, lang, updates, website (honeypot) }
+// Checks the details and records the kit request in HubSpot. See lib/kit-gate.js.
+import { handleKitRequest, hubspotSender } from '../../lib/kit-gate.js';
 
-export default (req, context) => {
-  const env = process.env;
-  return handleKitRequest(req, env, { mail: env.RESEND_API_KEY ? resendMailer(env) : null, ip: context.ip });
-};
+export default (req, context) => handleKitRequest(req, process.env, { hubspot: hubspotSender(process.env), ip: context.ip });
 
 // At most 5 requests per minute from one visitor (Netlify rate limiting).
 export const config = {

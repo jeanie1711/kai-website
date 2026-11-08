@@ -22,7 +22,7 @@
 <link rel="alternate" hreflang="vi" href="https://kai.services/vi/zero-trust-security-foundation">
 <link rel="alternate" hreflang="x-default" href="https://kai.services/zero-trust-security-foundation">
 <title>KAI Zero Trust Baseline Policies for Microsoft 365 | Free policy kit</title>
-<meta name="description" content="The Zero Trust baseline for Microsoft 365: 28 policies and 8 practices mapped across the Zero Trust architecture. Download the free policy kit, or work with KAI to put it in place.">
+<meta name="description" content="The Zero Trust baseline for Microsoft 365: 28 policies and 8 practices mapped across the Zero Trust architecture. Request the free policy kit, or work with KAI to put it in place.">
 <link rel="canonical" href="https://kai.services/zero-trust-security-foundation">
 <meta property="og:title" content="KAI Zero Trust Baseline Policies for Microsoft 365">
 <meta property="og:description" content="Clear security rules for safer everyday work, with a Zero Trust approach. Free policy kit, sent to your inbox.">
@@ -42,7 +42,7 @@
 {"@type":"Question","name":"Do we need to buy more Microsoft subscriptions?","acceptedAnswer":{"@type":"Answer","text":"Some policies may use features you already pay for. Others may need a different subscription or an extra feature. KAI checks what you have before recommending changes."}},
 {"@type":"Question","name":"Will the changes make work harder for our team?","acceptedAnswer":{"@type":"Answer","text":"Some rules change how people sign in, use devices or share files. KAI tests the changes, introduces them step by step and helps your team understand what to do."}},
 {"@type":"Question","name":"Can we use the free kit without hiring KAI?","acceptedAnswer":{"@type":"Answer","text":"Yes. Review the policies with your IT team or IT partner and decide what fits your business. The kit gives you the policy list and questions to check. You will still need someone who can safely set up and test the changes."}},
-{"@type":"Question","name":"Does marking the map confirm we are secure?","acceptedAnswer":{"@type":"Answer","text":"No. The marks are your own notes about what to check. They do not test your systems. Your notes stay in your browser and can be included in your download."}},
+{"@type":"Question","name":"Does marking the map confirm we are secure?","acceptedAnswer":{"@type":"Answer","text":"No. The marks are your own notes about what to check. They do not test your systems. Your notes stay in your browser."}},
 {"@type":"Question","name":"What do we receive when we work with KAI?","acceptedAnswer":{"@type":"Answer","text":"You receive the policies agreed for your business, records of the setup and tests, guidance for your team and suggested next steps. These are brought together in your KAI Zero Trust Security Pack."}}
 ]}
 </script>
@@ -171,18 +171,24 @@
           <li>A map showing how the policies fit together</li>
           <li>28 security rules and 8 team practices</li>
           <li>Questions to check before making changes</li>
-          <li>Your notes from reviewing the map</li>
         </ul>
         <div class="zt-choice-foot">
           <form class="zt-gate" id="zt-gate" novalidate>
-            <label class="zt-gate-label" for="zt-email">Your work email</label>
-            <input class="zt-input" type="email" id="zt-email" name="email" autocomplete="email" inputmode="email" placeholder="name@company.com" required aria-describedby="zt-download-status zt-gate-note">
+            <div class="zt-gate-pair">
+              <label class="zt-field"><span>First name</span><input class="zt-input" name="firstname" autocomplete="given-name" maxlength="100" required></label>
+              <label class="zt-field"><span>Last name</span><input class="zt-input" name="lastname" autocomplete="family-name" maxlength="100" required></label>
+            </div>
+            <label class="zt-field"><span>Work email</span><input class="zt-input" type="email" id="zt-email" name="email" autocomplete="email" inputmode="email" maxlength="254" placeholder="name@company.com" required></label>
+            <div class="zt-gate-pair">
+              <label class="zt-field"><span>Company</span><input class="zt-input" name="company" autocomplete="organization" maxlength="100" required></label>
+              <label class="zt-field"><span>Team size</span><select class="zt-input" name="size" required><option value="">Choose…</option><option value="1-5">1–5 people</option><option value="5-25">5–25 people</option><option value="25-50">25–50 people</option><option value="50-100">50–100 people</option><option value="100-500">100–500 people</option><option value="500-1000">500–1000 people</option><option value="1000+">1000+ people</option></select></label>
+            </div>
             <input class="zt-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
             <label class="zt-check"><input type="checkbox" name="updates"> <span>Also send me occasional Zero Trust tips from KAI</span></label>
-            <button type="submit" class="zt-download" id="zt-download">Email me the free policy kit <span aria-hidden="true">→</span></button>
+            <button type="submit" class="zt-download" id="zt-download">Request the free policy kit <span aria-hidden="true">→</span></button>
             <p class="zt-status" id="zt-download-status" role="status" aria-live="polite"></p>
           </form>
-          <p class="zt-micro" id="zt-gate-note">We’ll email you a download link. Open the HTML file offline or print it to PDF. The kit lists the policies and things to check; detailed setup instructions are not included. We use your email to send the kit and, if you tick the box, occasional tips.</p>
+          <p class="zt-micro" id="zt-gate-note">KAI reviews each request and emails you the kit, usually within 1–2 business days. The kit lists the policies and things to check; detailed setup instructions are not included. We use your details to send the kit and, if you tick the box, occasional tips.</p>
         </div>
       </article>
       <article class="zt-choice dark">
@@ -217,7 +223,7 @@
       <details><summary>Do we need to buy more Microsoft subscriptions? <span class="pm">+</span></summary><p>Some policies may use features you already pay for. Others may need a different subscription or an extra feature. KAI checks what you have before recommending changes.</p></details>
       <details><summary>Will the changes make work harder for our team? <span class="pm">+</span></summary><p>Some rules change how people sign in, use devices or share files. We test the changes, introduce them step by step and help your team understand what to do.</p></details>
       <details><summary>Can we use the free kit without hiring KAI? <span class="pm">+</span></summary><p>Yes. Review the policies with your IT team or IT partner and decide what fits your business. The kit gives you the policy list and questions to check. You will still need someone who can safely set up and test the changes.</p></details>
-      <details><summary>Does marking the map confirm we are secure? <span class="pm">+</span></summary><p>No. The marks are your own notes about what to check. They do not test your systems. Your notes stay in this browser and can be included in your download.</p></details>
+      <details><summary>Does marking the map confirm we are secure? <span class="pm">+</span></summary><p>No. The marks are your own notes about what to check. They do not test your systems. Your notes stay in this browser.</p></details>
       <details><summary>What do we receive when we work with KAI? <span class="pm">+</span></summary><p>You receive the policies agreed for your business, records of the setup and tests, guidance for your team and suggested next steps. These are brought together in your KAI Zero Trust Security Pack.</p></details>
     </div>
   </div>

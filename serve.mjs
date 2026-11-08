@@ -1,9 +1,9 @@
 // Local preview that mimics Netlify's clean URLs (/about -> about.html, /dir/ -> dir/index.html).
-// Also runs the kit email gate (/api/kit-request, /api/kit-verify). Instead of sending email or
-// calling HubSpot it prints the download link and the lead here, so the whole flow can be tested locally.
+// Also runs the policy kit request form (/api/kit-request). Instead of calling HubSpot it prints the
+// lead here, so the form can be tested locally.
 // Usage: node serve.mjs [port]
 import { createServer } from 'node:http';
-import { handleKitRequest, handleKitVerify } from './lib/kit-gate.js';
+import { handleKitRequest } from './lib/kit-gate.js';
 import { readFile, stat } from 'node:fs/promises';
 import { join, extname, dirname } from 'node:path';
 
@@ -12,15 +12,9 @@ const port = Number(process.argv[2]) || 8788;
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.png': 'image/png', '.svg': 'image/svg+xml', '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8' };
 const isFile = (p) => stat(p).then((s) => s.isFile(), () => false);
 
-const devDeps = {
-  mail: async ({ to, subject, text }) => {
-    const link = text.split(/\r?\n/).find((l) => l.includes('http')) || '';
-    console.log(`[dev mail] to ${to}: ${subject} ${link}`);
-  },
-  hubspot: async (lead) => console.log('[dev hubspot] lead', JSON.stringify(lead)),
-};
-const devEnv = { SITE_URL: `http://localhost:${port}`, KIT_SECRET: 'local-dev-secret-not-used-in-production' };
-const api = { '/api/kit-request': handleKitRequest, '/api/kit-verify': handleKitVerify };
+const devDeps = { hubspot: async (lead) => console.log('[dev hubspot] lead', JSON.stringify(lead)) };
+const devEnv = { SITE_URL: `http://localhost:${port}` };
+const api = { '/api/kit-request': handleKitRequest };
 
 async function runApi(req, res, handler) {
   const chunks = [];

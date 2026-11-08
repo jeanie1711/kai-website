@@ -3,7 +3,7 @@
 <head>
 <!--#head-common-->
 <title>KAI Zero Trust Baseline Policies cho Microsoft 365 | Bộ chính sách miễn phí</title>
-<meta name="description" content="Baseline Zero Trust cho Microsoft 365: 28 chính sách và 8 thực hành được sắp xếp theo kiến trúc Zero Trust. Tải bộ chính sách miễn phí, hoặc cùng KAI triển khai.">
+<meta name="description" content="Baseline Zero Trust cho Microsoft 365: 28 chính sách và 8 thực hành được sắp xếp theo kiến trúc Zero Trust. Nhận bộ chính sách miễn phí, hoặc cùng KAI triển khai.">
 <link rel="canonical" href="https://kai.services/vi/zero-trust-security-foundation">
 <meta property="og:locale" content="vi_VN">
 <meta property="og:title" content="KAI Zero Trust Baseline Policies cho Microsoft 365">
@@ -24,7 +24,7 @@
 {"@type":"Question","name":"Chúng tôi có cần mua thêm gói Microsoft không?","acceptedAnswer":{"@type":"Answer","text":"Một số chính sách có thể dùng tính năng bạn đã trả tiền. Một số khác có thể cần gói khác hoặc tính năng bổ sung. KAI kiểm tra những gì bạn đang có trước khi đề xuất thay đổi."}},
 {"@type":"Question","name":"Các thay đổi có làm đội ngũ khó làm việc hơn không?","acceptedAnswer":{"@type":"Answer","text":"Một số quy tắc thay đổi cách mọi người đăng nhập, dùng thiết bị hoặc chia sẻ tệp. KAI kiểm thử thay đổi, triển khai từng bước và giúp đội ngũ hiểu cần làm gì."}},
 {"@type":"Question","name":"Có thể dùng bộ chính sách miễn phí mà không thuê KAI không?","acceptedAnswer":{"@type":"Answer","text":"Có. Hãy xem các chính sách cùng đội IT hoặc đối tác IT và quyết định điều gì phù hợp với doanh nghiệp. Bộ tài liệu cho bạn danh sách chính sách và câu hỏi cần kiểm tra. Bạn vẫn cần người có thể thiết lập và kiểm thử thay đổi một cách an toàn."}},
-{"@type":"Question","name":"Đánh dấu trên bản đồ có xác nhận chúng tôi đã an toàn không?","acceptedAnswer":{"@type":"Answer","text":"Không. Các đánh dấu là ghi chú của riêng bạn về những gì cần kiểm tra. Chúng không kiểm tra hệ thống của bạn. Ghi chú được lưu trên trình duyệt và có thể đưa vào bản tải về."}},
+{"@type":"Question","name":"Đánh dấu trên bản đồ có xác nhận chúng tôi đã an toàn không?","acceptedAnswer":{"@type":"Answer","text":"Không. Các đánh dấu là ghi chú của riêng bạn về những gì cần kiểm tra. Chúng không kiểm tra hệ thống của bạn. Ghi chú được lưu trên trình duyệt."}},
 {"@type":"Question","name":"Làm việc với KAI, chúng tôi nhận được gì?","acceptedAnswer":{"@type":"Answer","text":"Bạn nhận các chính sách đã thống nhất cho doanh nghiệp, hồ sơ thiết lập và kiểm thử, hướng dẫn cho đội ngũ và đề xuất bước tiếp theo. Tất cả được tập hợp trong KAI Zero Trust Security Pack."}}
 ]}
 </script>
@@ -103,18 +103,24 @@
           <li>Bản đồ cho thấy các chính sách liên kết với nhau thế nào</li>
           <li>28 quy tắc bảo mật và 8 thực hành cho đội ngũ</li>
           <li>Câu hỏi cần kiểm tra trước khi thay đổi</li>
-          <li>Ghi chú của bạn khi rà soát bản đồ</li>
         </ul>
         <div class="zt-choice-foot">
           <form class="zt-gate" id="zt-gate" novalidate>
-            <label class="zt-gate-label" for="zt-email">Email công việc của bạn</label>
-            <input class="zt-input" type="email" id="zt-email" name="email" autocomplete="email" inputmode="email" placeholder="ten@congty.com" required aria-describedby="zt-download-status zt-gate-note">
+            <div class="zt-gate-pair">
+              <label class="zt-field"><span>Họ</span><input class="zt-input" name="lastname" autocomplete="family-name" maxlength="100" required></label>
+              <label class="zt-field"><span>Tên</span><input class="zt-input" name="firstname" autocomplete="given-name" maxlength="100" required></label>
+            </div>
+            <label class="zt-field"><span>Email công việc</span><input class="zt-input" type="email" id="zt-email" name="email" autocomplete="email" inputmode="email" maxlength="254" placeholder="ten@congty.com" required></label>
+            <div class="zt-gate-pair">
+              <label class="zt-field"><span>Công ty</span><input class="zt-input" name="company" autocomplete="organization" maxlength="100" required></label>
+              <label class="zt-field"><span>Quy mô đội ngũ</span><select class="zt-input" name="size" required><option value="">Chọn…</option><option value="1-5">1–5 người</option><option value="5-25">5–25 người</option><option value="25-50">25–50 người</option><option value="50-100">50–100 người</option><option value="100-500">100–500 người</option><option value="500-1000">500–1000 người</option><option value="1000+">1000+ người</option></select></label>
+            </div>
             <input class="zt-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
             <label class="zt-check"><input type="checkbox" name="updates"> <span>Gửi cho tôi các mẹo Zero Trust từ KAI theo định kỳ</span></label>
-            <button type="submit" class="zt-download" id="zt-download">Gửi bộ chính sách miễn phí qua email <span aria-hidden="true">→</span></button>
+            <button type="submit" class="zt-download" id="zt-download">Nhận bộ chính sách miễn phí <span aria-hidden="true">→</span></button>
             <p class="zt-status" id="zt-download-status" role="status" aria-live="polite"></p>
           </form>
-          <p class="zt-micro" id="zt-gate-note">Chúng tôi sẽ gửi đường link tải về qua email. Mở tệp HTML khi không có mạng hoặc in ra PDF. Bộ tài liệu liệt kê các chính sách và những điều cần kiểm tra; không gồm hướng dẫn cấu hình chi tiết. KAI dùng email của bạn để gửi bộ tài liệu và, nếu bạn đồng ý, các mẹo bảo mật.</p>
+          <p class="zt-micro" id="zt-gate-note">KAI xem từng yêu cầu và gửi bộ tài liệu qua email cho bạn, thường trong 1–2 ngày làm việc. Bộ tài liệu liệt kê các chính sách và những điều cần kiểm tra; không gồm hướng dẫn cấu hình chi tiết. KAI dùng thông tin của bạn để gửi bộ tài liệu và, nếu bạn đồng ý, các mẹo bảo mật.</p>
         </div>
       </article>
       <article class="zt-choice dark">
@@ -149,7 +155,7 @@
       <details><summary>Chúng tôi có cần mua thêm gói Microsoft không? <span class="pm">+</span></summary><p>Một số chính sách có thể dùng tính năng bạn đã trả tiền. Một số khác có thể cần gói khác hoặc tính năng bổ sung. KAI kiểm tra những gì bạn đang có trước khi đề xuất thay đổi.</p></details>
       <details><summary>Các thay đổi có làm đội ngũ khó làm việc hơn không? <span class="pm">+</span></summary><p>Một số quy tắc thay đổi cách mọi người đăng nhập, dùng thiết bị hoặc chia sẻ tệp. Chúng tôi kiểm thử thay đổi, triển khai từng bước và giúp đội ngũ hiểu cần làm gì.</p></details>
       <details><summary>Có thể dùng bộ chính sách miễn phí mà không thuê KAI không? <span class="pm">+</span></summary><p>Có. Hãy xem các chính sách cùng đội IT hoặc đối tác IT và quyết định điều gì phù hợp với doanh nghiệp. Bộ tài liệu cho bạn danh sách chính sách và câu hỏi cần kiểm tra. Bạn vẫn cần người có thể thiết lập và kiểm thử thay đổi một cách an toàn.</p></details>
-      <details><summary>Đánh dấu trên bản đồ có xác nhận chúng tôi đã an toàn không? <span class="pm">+</span></summary><p>Không. Các đánh dấu là ghi chú của riêng bạn về những gì cần kiểm tra. Chúng không kiểm tra hệ thống của bạn. Ghi chú được lưu trên trình duyệt này và có thể đưa vào bản tải về.</p></details>
+      <details><summary>Đánh dấu trên bản đồ có xác nhận chúng tôi đã an toàn không? <span class="pm">+</span></summary><p>Không. Các đánh dấu là ghi chú của riêng bạn về những gì cần kiểm tra. Chúng không kiểm tra hệ thống của bạn. Ghi chú được lưu trên trình duyệt này.</p></details>
       <details><summary>Làm việc với KAI, chúng tôi nhận được gì? <span class="pm">+</span></summary><p>Bạn nhận các chính sách đã thống nhất cho doanh nghiệp, hồ sơ thiết lập và kiểm thử, hướng dẫn cho đội ngũ và đề xuất bước tiếp theo. Tất cả được tập hợp trong KAI Zero Trust Security Pack.</p></details>
     </div>
   </div>

@@ -1,4 +1,4 @@
-# Netlify: static site in public/ (no build step), plus the two functions for the policy kit email gate.
+# Netlify: static site in public/ (no build step), plus the function for the policy kit request form.
 # Redirects live in public/_redirects. Secrets and IDs are set in the Netlify UI (see README).
 [build]
   publish = "public"

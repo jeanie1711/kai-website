@@ -8,7 +8,7 @@ Static site for KAI. Pages are written in `src/pages/` and assembled into `publi
 - `src/partials/` – shared head tags, icon sprite, nav and footer. Edit these once and every page updates.
 - `src/data/glossary.json` – glossary terms. The build renders both the visible glossary and its DefinedTermSet JSON-LD from this file.
 - `src/data/workflows.json` – the AI workflow list; related-workflow cards render from it.
-- `src/data/zt-baseline.json` – the Zero Trust Baseline map: 8 components, 28 policies (PO) and 8 practices (PR), demo steps and box positions. `public/assets/zt-map.js` adds the map behaviour and the free policy kit download.
+- `src/data/zt-baseline.json` – the Zero Trust Baseline map: 8 components, 28 policies (PO) and 8 practices (PR), demo steps and box positions. `public/assets/zt-map.js` adds the map behaviour and the policy kit request form.
 - `public/` – built site (commit it). Also holds `assets/` (CSS, JS, logos), `sitemap.xml`, `robots.txt`, `llms.txt`, `_redirects`.
 
 ## Working on the site
@@ -32,48 +32,44 @@ Always run `node build.mjs` and commit `public/` together with your `src/` chang
    - Leave `MX` and `TXT` records alone (they run email).
 4. Back in Netlify, wait for **HTTPS** to show the certificate as issued, and set `kai.services` as the primary domain.
 
-## Free policy kit email gate
+## Free policy kit requests (HubSpot, sent by hand)
 
-Visitors must leave an email to get the kit. The flow (code in `lib/kit-gate.js`, wired up in `netlify/functions/`):
+Visitors request the kit with a short form on the Zero Trust page: first name, last name, work email, company,
+team size, plus an optional "occasional tips" tick-box. There is no automatic download.
 
-1. `POST /api/kit-request`: the email is checked (format, common typos, throwaway inbox providers, placeholder
-   addresses, domain can receive mail), then a one-time download link is emailed via Resend. The link holds an
-   encrypted token with the email, language and tick-box choice, valid 7 days. Nothing is stored on Netlify.
-2. The visitor opens the link and lands on the Zero Trust page with `?kit=...`. The page calls
-   `GET /api/kit-verify`, then builds and downloads the kit in their language, with their map notes.
-3. On that confirmation the lead goes to HubSpot (Forms API), so HubSpot only receives inboxes proven real.
+1. `POST /api/kit-request` (code in `lib/kit-gate.js`, wired up in `netlify/functions/kit-request.mjs`) checks the
+   email (format, common typos, throwaway inbox providers, placeholder addresses, domain can receive mail).
+2. The details go to HubSpot through the Forms API: the contact is created or updated and a form submission is logged.
+3. KAI reviews the request in HubSpot and emails the kit by hand, attaching the file from `lead-magnet/`
+   (English `KAI_Zero_Trust_Baseline_Policy_Kit.html`, Vietnamese `KAI_Zero_Trust_Baseline_Bo_Chinh_Sach.html`).
+   The page promises a reply within 1 to 2 business days.
 
-Netlify rate-limits both endpoints per visitor. Locally, `node serve.mjs` runs the same flow and prints the
-emailed link and the HubSpot lead in the terminal instead of sending them.
+After changing the map data or copy, regenerate the kit files: `node build.mjs && node tools/make-kit.mjs`.
+`lead-magnet/` sits outside `public/`, so the files are not published on the site.
 
-### One-time setup
+Netlify rate-limits the endpoint per visitor. Locally, `node serve.mjs` runs the same form and prints the lead in the
+terminal instead of sending it to HubSpot.
 
-**Resend** (sends the download link):
-1. Sign up at resend.com → **Domains → Add domain** → `kai.services`.
-2. Add the DNS records Resend lists (SPF/DKIM `TXT`, `MX` on a `send` subdomain) in GoDaddy DNS. They do not touch your main email.
-3. **API Keys → Create** (sending access) and copy the key.
+### One-time HubSpot setup
 
-**HubSpot** (receives the leads):
-1. **Marketing → Forms → Create form** (embedded form), name it "Zero Trust policy kit". Fields: **Email**, and optionally
-   **Preferred language** (`hs_language`). Under the form's settings, add C4L@kai.services to notifications if you want an email per lead.
-2. Publish, then copy the **form ID** (in the form URL / embed code) and your **portal ID** (Account ID, top-right menu).
-3. Optional: to record the "occasional Zero Trust tips" tick-box as a real subscription, turn on data privacy settings,
-   create a subscription type (Settings → Marketing → Email → Subscriptions) and copy its ID.
+1. **Marketing → Forms → Create form** (embedded form), name it "Zero Trust policy kit". Add these fields:
+   **First name**, **Last name**, **Email**, **Company name**, **Number of employees**, and optionally
+   **Preferred language** (`hs_language`, can be hidden). Field names must match these HubSpot contact properties.
+2. In the form's options, turn on **notifications** to C4L@kai.services so every request lands in your inbox.
+3. Publish, then copy the **form ID** (in the form URL or embed code) and your **portal ID** (Account ID, top-right menu).
+4. Optional: to record the tips tick-box as a real email subscription, turn on data privacy settings, create a subscription
+   type (Settings → Marketing → Email → Subscriptions) and copy its ID.
 
 **Netlify → Site configuration → Environment variables:**
 
 | Variable | Value |
 |---|---|
-| `KIT_SECRET` | A long random string (e.g. from a password generator). Changing it invalidates links already sent. |
-| `RESEND_API_KEY` | The Resend API key |
-| `MAIL_FROM` | `KAI <kit@kai.services>` |
-| `MAIL_REPLY_TO` | `C4L@kai.services` |
 | `HUBSPOT_PORTAL_ID` | HubSpot portal (account) ID |
 | `HUBSPOT_FORM_ID` | The form's ID |
-| `HUBSPOT_SUBSCRIPTION_ID` | Optional, see above |
+| `HUBSPOT_SUBSCRIPTION_ID` | Optional, see step 4 |
 
-Redeploy after adding them. Until `KIT_SECRET` and `RESEND_API_KEY` are set the form shows a friendly error and no kit
-can be downloaded; until the HubSpot IDs are set, downloads work but leads are not recorded.
+Redeploy after adding them. Until the HubSpot IDs are set, the form shows a friendly error asking visitors to write to
+C4L@kai.services.
 
 ## Adding a page
 
