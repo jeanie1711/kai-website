@@ -26,7 +26,7 @@
 <link rel="canonical" href="https://kai.services/vi/zero-trust-security-foundation">
 <meta property="og:locale" content="vi_VN">
 <meta property="og:title" content="KAI Zero Trust Baseline Policies cho Microsoft 365">
-<meta property="og:description" content="Quy tắc bảo mật rõ ràng cho công việc hằng ngày an toàn hơn, theo cách tiếp cận Zero Trust. Bộ chính sách miễn phí, không cần email.">
+<meta property="og:description" content="Quy tắc bảo mật rõ ràng cho công việc hằng ngày an toàn hơn, theo cách tiếp cận Zero Trust. Bộ chính sách miễn phí, gửi qua email.">
 <meta property="og:url" content="https://kai.services/vi/zero-trust-security-foundation">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"DigitalDocument","name":"KAI Zero Trust Baseline Policies","inLanguage":"vi","description":"Bộ chính sách miễn phí cho doanh nghiệp khoảng 20 đến 200 người dùng Microsoft 365: 28 chính sách bảo mật do hệ thống thực thi và 8 thực hành do con người thực hiện, sắp xếp theo các thành phần của kiến trúc Zero Trust, kèm câu hỏi cần kiểm tra trước khi thay đổi.","url":"https://kai.services/vi/zero-trust-security-foundation#next-step","isAccessibleForFree":true,"publisher":{"@type":"Organization","name":"KAI","url":"https://kai.services"},"about":["Zero Trust","Microsoft 365","Security baseline"]}
@@ -175,9 +175,15 @@
           <li>Ghi chú của bạn khi rà soát bản đồ</li>
         </ul>
         <div class="zt-choice-foot">
-          <button type="button" class="zt-download" id="zt-download">Tải bộ chính sách miễn phí <span aria-hidden="true">↓</span></button>
-          <p class="zt-status" id="zt-download-status" role="status"></p>
-          <p class="zt-micro">Không cần email. Mở tệp HTML khi không có mạng hoặc in ra PDF. Bộ tài liệu liệt kê các chính sách và những điều cần kiểm tra; không gồm hướng dẫn cấu hình chi tiết.</p>
+          <form class="zt-gate" id="zt-gate" novalidate>
+            <label class="zt-gate-label" for="zt-email">Email công việc của bạn</label>
+            <input class="zt-input" type="email" id="zt-email" name="email" autocomplete="email" inputmode="email" placeholder="ten@congty.com" required aria-describedby="zt-download-status zt-gate-note">
+            <input class="zt-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <label class="zt-check"><input type="checkbox" name="updates"> <span>Gửi cho tôi các mẹo Zero Trust từ KAI theo định kỳ</span></label>
+            <button type="submit" class="zt-download" id="zt-download">Gửi bộ chính sách miễn phí qua email <span aria-hidden="true">→</span></button>
+            <p class="zt-status" id="zt-download-status" role="status" aria-live="polite"></p>
+          </form>
+          <p class="zt-micro" id="zt-gate-note">Chúng tôi sẽ gửi đường link tải về qua email. Mở tệp HTML khi không có mạng hoặc in ra PDF. Bộ tài liệu liệt kê các chính sách và những điều cần kiểm tra; không gồm hướng dẫn cấu hình chi tiết. KAI dùng email của bạn để gửi bộ tài liệu và, nếu bạn đồng ý, các mẹo bảo mật.</p>
         </div>
       </article>
       <article class="zt-choice dark">

@@ -5,7 +5,7 @@
 ## Services
 
 - [AI Workflows](https://kai.services/ai-workflows/): KAI's main service. AI agents for everyday work, delivered in three steps (Define: choose the process, data sources and access permissions; Implement: build a pilot, test real scenarios and hand it over; Adopt: guide the team, measure results and refine). Every agent works with approved data, defined actions and human oversight.
-- [Zero Trust: KAI Zero Trust Baseline Policies and Security Foundation](https://kai.services/zero-trust-security-foundation): An interactive KAI Zero Trust Architecture map of 28 policies (PO, enforced by systems) and 8 practices (PR, carried out by people) for Microsoft 365, across Identities, Endpoints, Access Controls, Threat Protection, Data, Applications & AI, Telemetry, and Posture & Governance. Free policy kit download with no email. The paid KAI Zero Trust Security Foundation (Define, Implementation, Adopt) puts the baseline in place with the team; it is sold on its own and recommended alongside AI Workflows.
+- [Zero Trust: KAI Zero Trust Baseline Policies and Security Foundation](https://kai.services/zero-trust-security-foundation): An interactive KAI Zero Trust Architecture map of 28 policies (PO, enforced by systems) and 8 practices (PR, carried out by people) for Microsoft 365, across Identities, Endpoints, Access Controls, Threat Protection, Data, Applications & AI, Telemetry, and Posture & Governance. Free policy kit, sent by email once the visitor confirms their address. The paid KAI Zero Trust Security Foundation (Define, Implementation, Adopt) puts the baseline in place with the team; it is sold on its own and recommended alongside AI Workflows.
 
 ## AI workflows
 

@@ -13,7 +13,21 @@
       note: 'These are your own notes. They stay in this browser and are not sent to KAI.',
       progress: function (n) { return 'Your review: ' + n + ' of 8 components marked · Your notes, not a system check.'; },
       clear: 'Clear my notes', step: function (n, t) { return 'Step ' + n + ' of 5 · ' + t; },
-      play: '▶ Play a real scenario: sign-in', pause: 'Ⅱ Pause demo', downloaded: 'Your free policy kit has been downloaded.',
+      play: '▶ Play a real scenario: sign-in', pause: 'Ⅱ Pause demo',
+      gate: {
+        sending: 'Checking your email…', verifying: 'Confirming your link…', again: 'Download again',
+        sent: function (e) { return 'Check your inbox at ' + e + '. Click the link in our email to download the kit. If it hasn’t arrived in a few minutes, check your spam folder.'; },
+        downloaded: 'Email confirmed. Your free policy kit is downloading.',
+        typo: function (s) { return 'Did you mean ' + s + '?'; }, useIt: 'Use this address',
+        invalid_format: 'Please enter a valid email address.',
+        disposable: 'Please use a permanent email address, not a temporary inbox.',
+        junk: 'Please enter your real email address so we can send you the kit.',
+        no_mail_server: 'This email domain can’t receive mail. Please check the address.',
+        rate_limited: 'Too many requests. Please try again a little later.',
+        invalid_link: 'This download link isn’t valid. Enter your email again to get a new one.',
+        expired: 'This download link has expired. Enter your email again to get a new one.',
+        failed: 'Sorry, we couldn’t send the email right now. Please try again, or write to C4L@kai.services.',
+      },
       file: 'KAI_Zero_Trust_Baseline_Policy_Kit.html',
       kit: {
         title: 'KAI Zero Trust Baseline Policies: Free Policy Kit', sub: 'Free policy kit for Microsoft 365', counts: '28 security rules · 8 team practices',
@@ -31,7 +45,21 @@
       note: 'Đây là ghi chú của riêng bạn. Ghi chú được lưu trên trình duyệt này và không gửi cho KAI.',
       progress: function (n) { return 'Bạn đã đánh dấu ' + n + '/8 nhóm · Đây là ghi chú của bạn, không phải kết quả kiểm tra hệ thống.'; },
       clear: 'Xóa ghi chú', step: function (n, t) { return 'Bước ' + n + '/5 · ' + t; },
-      play: '▶ Xem kịch bản thực tế: một lần đăng nhập', pause: 'Ⅱ Tạm dừng demo', downloaded: 'Bộ chính sách miễn phí đã được tải về.',
+      play: '▶ Xem kịch bản thực tế: một lần đăng nhập', pause: 'Ⅱ Tạm dừng demo',
+      gate: {
+        sending: 'Đang kiểm tra email…', verifying: 'Đang xác nhận đường link…', again: 'Tải lại',
+        sent: function (e) { return 'Hãy kiểm tra hộp thư ' + e + '. Bấm vào đường link trong email để tải bộ chính sách. Nếu sau vài phút chưa thấy, hãy xem thư mục spam.'; },
+        downloaded: 'Email đã được xác nhận. Bộ chính sách miễn phí đang được tải về.',
+        typo: function (s) { return 'Có phải bạn muốn nhập ' + s + '?'; }, useIt: 'Dùng địa chỉ này',
+        invalid_format: 'Vui lòng nhập địa chỉ email hợp lệ.',
+        disposable: 'Vui lòng dùng địa chỉ email lâu dài, không dùng hộp thư tạm thời.',
+        junk: 'Vui lòng nhập địa chỉ email thật để chúng tôi gửi bộ tài liệu cho bạn.',
+        no_mail_server: 'Tên miền email này không nhận được thư. Vui lòng kiểm tra lại địa chỉ.',
+        rate_limited: 'Bạn đã gửi quá nhiều yêu cầu. Vui lòng thử lại sau ít phút.',
+        invalid_link: 'Đường link tải về không hợp lệ. Hãy nhập lại email để nhận link mới.',
+        expired: 'Đường link tải về đã hết hạn. Hãy nhập lại email để nhận link mới.',
+        failed: 'Xin lỗi, hiện chưa gửi được email. Vui lòng thử lại, hoặc liên hệ C4L@kai.services.',
+      },
       file: 'KAI_Zero_Trust_Baseline_Bo_Chinh_Sach.html',
       kit: {
         title: 'KAI Zero Trust Baseline Policies: Bộ chính sách miễn phí', sub: 'Bộ chính sách miễn phí cho Microsoft 365', counts: '28 quy tắc bảo mật · 8 thực hành cho đội ngũ',
@@ -136,8 +164,10 @@
   });
   document.addEventListener('visibilitychange', function () { if (document.hidden) stop(); });
 
-  // Free policy kit: generated in the browser, in the page's language. No form and no email.
-  document.getElementById('zt-download').addEventListener('click', function () {
+  // Free policy kit. The visitor leaves an email; the server checks it and emails a one-time link
+  // (see lib/kit-gate.js). Opening that link brings them back here with ?kit=..., we confirm it with
+  // the server, then build the kit in the browser, in the page's language, with their review notes.
+  function downloadKit() {
     var K = L.kit;
     var groups = [['ident', 'endp'], ['gov', 'eng', 'threat'], ['data', 'apps']];
     var html = '<!doctype html><html lang="' + lang + '"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
@@ -164,8 +194,73 @@
     a.href = url; a.download = L.file;
     document.body.appendChild(a); a.click(); a.remove();
     setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
-    document.getElementById('zt-download-status').textContent = L.downloaded;
+  }
+
+  var G = L.gate;
+  var gateForm = document.getElementById('zt-gate');
+  var emailIn = document.getElementById('zt-email');
+  var statusEl = document.getElementById('zt-download-status');
+  var submitBtn = document.getElementById('zt-download');
+  var TYPO = { 'gmial.com': 'gmail.com', 'gmai.com': 'gmail.com', 'gamil.com': 'gmail.com', 'gnail.com': 'gmail.com', 'gmail.co': 'gmail.com', 'gmail.con': 'gmail.com', 'hotmial.com': 'hotmail.com', 'hotmail.co': 'hotmail.com', 'outlok.com': 'outlook.com', 'outlook.co': 'outlook.com', 'yaho.com': 'yahoo.com', 'yahoo.co': 'yahoo.com', 'icloud.co': 'icloud.com' };
+
+  function say(msg, kind) {
+    statusEl.textContent = msg;
+    statusEl.className = 'zt-status' + (kind ? ' ' + kind : '');
+  }
+  function suggest(addr) {
+    say(G.typo(addr), 'warn');
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'zt-linkbtn'; b.textContent = G.useIt;
+    b.addEventListener('click', function () { emailIn.value = addr; say(''); emailIn.focus(); });
+    statusEl.appendChild(document.createTextNode(' ')); statusEl.appendChild(b);
+  }
+  function fail(reason, suggestion) {
+    emailIn.setAttribute('aria-invalid', 'true');
+    if (reason === 'typo' && suggestion) return suggest(suggestion);
+    say(G[reason] || G.failed, 'error');
+  }
+
+  gateForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = emailIn.value.trim().toLowerCase();
+    emailIn.removeAttribute('aria-invalid');
+    if (!/^[^\s@]+@[^\s@]+\.[a-z]{2,}$/.test(email)) { fail('invalid_format'); emailIn.focus(); return; }
+    var dom = email.split('@')[1];
+    if (TYPO[dom]) { fail('typo', email.split('@')[0] + '@' + TYPO[dom]); return; }
+    submitBtn.disabled = true; say(G.sending);
+    fetch('/api/kit-request', {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ email: email, lang: lang, updates: gateForm.updates.checked, website: gateForm.website.value }),
+    }).then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
+      .then(function (res) {
+        if (res.ok) { say(G.sent(email), 'ok'); gateForm.classList.add('sent'); }
+        else fail(res.reason, res.suggestion);
+      })
+      .catch(function () { fail('failed'); })
+      .then(function () { submitBtn.disabled = false; });
   });
+
+  // Arrived from the emailed link?
+  var kitToken = new URLSearchParams(location.search).get('kit');
+  if (kitToken) {
+    var clean = location.pathname + location.hash;
+    say(G.verifying);
+    fetch('/api/kit-verify?token=' + encodeURIComponent(kitToken))
+      .then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
+      .then(function (res) {
+        history.replaceState(null, '', clean);
+        if (!res.ok) { say(G[res.reason] || G.failed, 'error'); return; }
+        downloadKit();
+        say(G.downloaded, 'ok');
+        var again = document.createElement('button');
+        again.type = 'button'; again.className = 'zt-linkbtn'; again.textContent = G.again;
+        again.addEventListener('click', downloadKit);
+        statusEl.appendChild(document.createTextNode(' ')); statusEl.appendChild(again);
+      })
+      .catch(function () { say(G.failed, 'error'); });
+    var target = document.getElementById('next-step');
+    if (target) setTimeout(function () { target.scrollIntoView({ block: 'start' }); }, 50);
+  }
 
   renderProgress();
   draw();

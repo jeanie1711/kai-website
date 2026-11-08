@@ -1,4 +1,4 @@
-# Cloudflare Pages serves clean URLs automatically (/about -> about.html),
+# Netlify serves clean URLs automatically (/about -> about.html),
 # so no rewrites are needed. Real 301 redirects for moved pages go below.
 
 # Workflows merged into Documents & Follow-ups (2026-10-15)
